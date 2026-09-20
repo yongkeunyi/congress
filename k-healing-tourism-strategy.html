@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>치유관광자원을 활용한 K-치유관광 대국 육성 전략 — 발제 2 통합본</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#23392F; --moss:#3F5E4F; --sage:#DCE6DC; --marigold:#F2B84B; --clay:#B8452E;
+  --paper:#FBFAF6; --ink:#1D2A24; --mute:#5D6B63; --line:#CBD5CC; --soil:#8A6A45; --plum:#6B5B8C;
+  --bg:#12201A;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#0B1510; } }
+:root[data-theme="dark"]{ --bg:#0B1510; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);overflow:hidden}
+body{font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.serif{font-family:"Gowun Batang","Nanum Myeongjo","Batang",serif}
+#viewport{position:absolute;left:0;right:0;top:96px;bottom:48px;display:flex;align-items:center;justify-content:center}
+#stage{width:1280px;height:720px;position:relative;transform-origin:center center;flex:none}
+.slide{position:absolute;inset:0;background:var(--paper);padding:56px 72px 52px;display:none;overflow:hidden}
+.slide.active{display:block}
+.slide.dark{background:var(--forest);color:#F3F1E8}
+.slide.dark .mute{color:#B9C8BD}
+.foot{position:absolute;left:72px;right:72px;bottom:20px;display:flex;justify-content:space-between;font-size:11px;color:var(--mute);letter-spacing:.01em}
+.dark .foot{color:#9FB3A6}
+.kicker{font-size:14px;font-weight:600;color:var(--moss);margin-bottom:10px}
+.dark .kicker{color:var(--marigold)}
+h1{font-family:"Gowun Batang",serif;font-weight:700;font-size:62px;line-height:1.18;letter-spacing:-.01em}
+h2{font-family:"Gowun Batang",serif;font-weight:700;font-size:34px;line-height:1.28;letter-spacing:-.01em;margin-bottom:8px;max-width:1080px}
+.lead{font-size:16px;line-height:1.65;color:var(--mute);max-width:980px;margin-bottom:22px}
+.dark .lead{color:#C9D6CC}
+.mute{color:var(--mute)}
+p,li{font-size:15px;line-height:1.6}
+.small{font-size:13px;line-height:1.55}
+.tiny{font-size:11.5px;line-height:1.5;color:var(--mute)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+.box{border-top:3px solid var(--moss);background:#fff;padding:16px 18px}
+.box h3{font-size:18px;font-weight:600;margin-bottom:6px;line-height:1.35}
+.box.gold{border-color:var(--marigold)} .box.clay{border-color:var(--clay)} .box.soil{border-color:var(--soil)} .box.plum{border-color:var(--plum)}
+.dark .box{background:rgba(255,255,255,.06);color:#F3F1E8}
+.dark .box .small{color:#D5DFD7}
+.stat b{display:block;font-family:"Gowun Batang",serif;font-size:40px;line-height:1.1;color:var(--forest)}
+.dark .stat b{color:var(--marigold)}
+.stat span{font-size:13px;color:var(--mute);line-height:1.45;display:block;margin-top:6px}
+.dark .stat span{color:#C9D6CC}
+.band{background:var(--forest);color:#F3F1E8;padding:16px 22px;font-size:17px;line-height:1.55;margin-top:18px}
+.band em{font-style:normal;color:var(--marigold);font-weight:600}
+.dark .band{background:rgba(0,0,0,.22)}
+.quote{font-family:"Gowun Batang",serif;font-size:19px;line-height:1.6;border-left:4px solid var(--marigold);padding:4px 0 4px 18px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{background:var(--forest);color:#F3F1E8;font-weight:600;text-align:left;padding:8px 10px;font-size:13px}
+td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45}
+tr.hi td{background:#FFF6DF;font-weight:600}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:3px;background:var(--sage);color:var(--forest);margin:0 4px 4px 0}
+.tag.g{background:#FBE8BF;color:#6B4A0C}.tag.c{background:#F3D6CE;color:#7A2A18}
+ul.clean{list-style:none}
+ul.clean li{padding-left:16px;position:relative;margin-bottom:6px}
+ul.clean li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--marigold);border-radius:50%}
+.pill-row{display:flex;gap:8px;flex-wrap:wrap}
+/* part divider */
+.part .numeral{font-family:"Gowun Batang",serif;font-size:220px;line-height:1;color:rgba(242,184,75,.9);position:absolute;right:72px;bottom:40px}
+.part h1{font-size:54px;margin-top:180px;max-width:760px}
+.part .lead{margin-top:18px;font-size:18px;max-width:700px}
+/* pillars */
+.pillar{padding:22px 22px 18px;color:#F3F1E8;position:relative;min-height:360px}
+.pillar .n{font-family:"Gowun Batang",serif;font-size:56px;color:var(--marigold);line-height:1}
+.pillar h3{font-family:"Gowun Batang",serif;font-size:24px;margin:10px 0 8px;line-height:1.3}
+.pillar .motto{font-size:14px;color:var(--marigold);font-weight:600;margin-bottom:12px}
+.pillar ul li{font-size:14px;color:#E6ECE7}
+/* flow steps */
+.flow{display:flex;gap:0;align-items:stretch}
+.flow .st{flex:1;background:var(--forest);color:#F3F1E8;padding:12px 14px;position:relative;margin-right:14px}
+.flow .st:last-child{margin-right:0;background:var(--marigold);color:var(--ink)}
+.flow .st::after{content:"";position:absolute;right:-14px;top:50%;transform:translateY(-50%);border:7px solid transparent;border-left-color:var(--forest)}
+.flow .st:last-child::after{display:none}
+.flow .st b{display:block;font-size:15px;margin:2px 0 3px}
+.flow .st span{font-size:12px;opacity:.85;line-height:1.4;display:block}
+.flow .st i{font-style:normal;font-size:12px;color:var(--marigold);font-weight:600}
+.flow .st:last-child i{color:var(--forest)}
+/* layers */
+.layer{display:grid;grid-template-columns:190px 1fr 150px;align-items:center;padding:12px 18px;margin-bottom:8px;background:#fff;border-left:5px solid var(--line)}
+.layer b{font-size:16px}
+.layer .r{text-align:right;font-weight:600;color:var(--moss);font-size:13px}
+.layer.d{background:var(--moss);color:#fff;border-left-color:var(--marigold)} .layer.d .r{color:var(--marigold)}
+.layer.w{background:#FFF6DF;border-left-color:var(--clay)} .layer.w .r{color:var(--clay)}
+/* org chart */
+.org{text-align:center}
+.org .top{display:inline-block;background:var(--clay);color:#fff;padding:12px 30px;font-weight:700;font-size:19px}
+.org .sec{display:inline-block;background:var(--forest);color:#fff;padding:9px 24px;font-size:15px;margin-top:14px}
+.org .vline{width:2px;height:14px;background:var(--mute);margin:0 auto}
+.org .row{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:14px;border-top:2px solid var(--mute);padding-top:14px}
+.org .row div{background:#fff;border-top:3px solid var(--moss);padding:8px 4px;font-size:13px;font-weight:600;line-height:1.35}
+.org .row div span{display:block;font-weight:400;font-size:11.5px;color:var(--mute);margin-top:3px}
+/* brand pyramid */
+.bp{display:flex;flex-direction:column;align-items:center;gap:8px}
+.bp div{text-align:center;padding:10px 12px}
+.bp .b1{background:var(--marigold);width:44%;font-family:"Gowun Batang",serif;font-size:22px;font-weight:700}
+.bp .b2{background:var(--forest);color:#fff;width:62%;font-size:17px;font-weight:600}
+.bp .b3{display:flex;gap:10px;width:80%;padding:0}.bp .b3 span{flex:1;background:#fff;border:1px solid var(--line);padding:10px;font-size:15px;font-weight:600}
+.bp .b4{display:flex;gap:10px;width:92%;padding:0}.bp .b4 span{flex:1;background:var(--sage);padding:9px;font-size:14px;font-weight:600}
+.bp .b5{background:var(--moss);color:#fff;width:100%;font-size:15px;font-weight:600}
+.bp small{display:block;font-weight:400;font-size:12px;opacity:.85;margin-top:2px}
+/* controls */
+#ui{position:fixed;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 10px);display:flex;justify-content:center;gap:10px;align-items:center;z-index:5;pointer-events:none}
+#ui button,#ui select{pointer-events:auto;font:inherit;font-size:13px;border:1px solid rgba(255,255,255,.25);background:rgba(20,35,28,.8);color:#F3F1E8;padding:6px 12px;border-radius:4px;cursor:pointer}
+#ui select{max-width:260px}
+#ui button:focus-visible,#ui select:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
+#counter{pointer-events:none;color:#C9D6CC;font-size:13px;min-width:62px;text-align:center}
+#bar{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;background:var(--marigold);z-index:6;transition:width .25s}
+@media print{
+  html,body{overflow:visible;background:#fff}
+  #ui,#bar{display:none}
+  #viewport{position:static;display:block}
+  #stage{transform:none!important;width:auto;height:auto}
+  .slide{display:block!important;position:relative;width:1280px;height:720px;page-break-after:always}
+}
+@media (prefers-reduced-motion:no-preference){ .slide.active{animation:fade .35s ease} @keyframes fade{from{opacity:.4}to{opacity:1}} }
+/* ===== top menu ===== */
+#topbar{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:48px;z-index:10;background:#16261F;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:stretch;padding:0 10px;gap:2px}
+#topbar .home{font:inherit;font-weight:700;font-size:14px;color:var(--ink);background:var(--marigold);border:0;padding:0 16px;margin:7px 10px 7px 0;border-radius:4px;cursor:pointer;white-space:nowrap}
+#topbar .menu{position:relative;display:flex}
+#topbar .mbtn{font:inherit;font-size:14px;color:#D9E3DC;background:none;border:0;padding:0 13px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+#topbar .mbtn:hover,#topbar .menu.open .mbtn{color:#fff;background:rgba(255,255,255,.06)}
+#topbar .menu.cur .mbtn{color:#fff;border-bottom-color:var(--marigold);font-weight:600}
+#topbar .drop{display:none;position:absolute;top:48px;left:0;min-width:270px;background:#FBFAF6;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:6px 0;border-top:3px solid var(--marigold)}
+#topbar .menu.open .drop{display:block}
+#topbar .drop .grp{font-size:12px;font-weight:600;color:var(--moss);padding:8px 16px 3px}
+#topbar .drop button{display:block;width:100%;text-align:left;font:inherit;font-size:14px;color:var(--ink);background:none;border:0;padding:7px 16px;cursor:pointer}
+#topbar .drop button:hover{background:var(--sage)}
+#topbar .drop button.on{font-weight:700;background:#FFF1CF}
+#topbar button:focus-visible{outline:2px solid var(--marigold);outline-offset:-2px}
+#topbar .spacer{flex:1}
+#topbar .crumb{align-self:center;font-size:12.5px;color:#9FB3A6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:320px}
+@media (max-width:900px){#topbar{overflow-x:auto}#topbar .crumb{display:none}}
+#bar{top:calc(env(safe-area-inset-top,0px) + 96px)!important}
+/* ===== overview map ===== */
+.mapslide{background:radial-gradient(ellipse at 50% 100%,#EFE6CF 0%,#FBFAF6 58%);padding:26px 40px 30px}
+.mapslide button{font:inherit;cursor:pointer;border:0;text-align:left;color:inherit}
+.mapslide button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.maphead{text-align:center}
+.mcol{position:absolute;top:118px;width:250px}
+.mcol.left{left:40px}.mcol.right{right:40px}
+.node{display:block;width:100%;background:var(--forest);color:#F3F1E8!important;padding:12px 14px 12px 58px;position:relative;min-height:74px;transition:transform .15s,box-shadow .15s}
+.node:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(35,57,47,.3)}
+.node .nn{position:absolute;left:12px;top:12px;font-family:"Gowun Batang",serif;font-size:32px;line-height:1;color:var(--marigold)}
+.node b{display:block;font-size:18px}.node small{display:block;font-size:12.5px;color:#C9D6CC;margin-top:3px;line-height:1.4}
+.n-V{background:#6E5A2E}.n-end{background:#3F5E4F}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.chips button{font-size:12.5px;background:#fff;border:1px solid var(--line)!important;padding:4px 9px;border-radius:14px}
+.chips button:hover{background:var(--sage)}
+.arrowdown{width:0;height:0;margin:10px auto;border:10px solid transparent;border-top:14px solid var(--mute);border-bottom:0}
+.bigarrow{position:absolute;top:350px;width:34px;height:4px;background:var(--mute)}
+.bigarrow::after{content:"";position:absolute;right:-6px;top:-7px;border:9px solid transparent;border-left:12px solid var(--mute);border-right:0}
+.a1{left:300px}.a2{right:300px}
+.temple{position:absolute;left:350px;right:350px;top:112px}
+.roof{display:block;width:100%;height:118px;background:var(--clay);color:#fff!important;clip-path:polygon(50% 0,100% 78%,100% 100%,0 100%,0 78%);text-align:center!important;padding-top:44px;transition:filter .15s}
+.roof:hover{filter:brightness(1.08)}
+.roof b{display:block;font-family:"Gowun Batang",serif;font-size:24px;margin-top:-6px}.roof small{display:block;font-size:12.5px;opacity:.9;margin-top:2px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:10px 14px 0}
+.pil{display:block;min-height:292px;color:#fff!important;padding:14px 12px;text-align:center!important;position:relative;transition:transform .15s,box-shadow .15s}
+.pil:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.25)}
+.p1{background:var(--forest)}.p2{background:#6E5A2E}.p3{background:#7A3322}
+.pil .pn{display:block;font-family:"Gowun Batang",serif;font-size:34px;color:var(--marigold);line-height:1}
+.pil b{display:block;font-family:"Gowun Batang",serif;font-size:18px;line-height:1.35;margin:8px 0}
+.pil em{display:block;font-style:normal;color:var(--marigold);font-weight:600;font-size:14px;margin-bottom:8px}
+.pil small{display:block;font-size:12px;line-height:1.45;color:#EDE6D6}
+.found{display:block;width:100%;margin-top:10px;background:var(--marigold);color:var(--ink)!important;padding:10px 14px 10px 56px;position:relative;transition:filter .15s}
+.found:hover{filter:brightness(1.05)}
+.found .nn{position:absolute;left:14px;top:9px;font-family:"Gowun Batang",serif;font-size:30px;color:var(--forest)}
+.found b{display:block;font-size:17px}.found small{display:block;font-size:12.5px;color:#4A3A1A}
+.ground{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;margin-top:6px}
+.ground button{background:#8A6A45;color:#fff!important;font-size:11.5px;padding:6px 0;text-align:center!important}
+.ground button:hover{background:#6E5335}
+.maphint{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:12px;color:var(--mute)}
+.mapslide .last{box-shadow:0 0 0 4px var(--clay),0 8px 18px rgba(0,0,0,.2)!important}
+.mapslide .last::before{content:"방금 설명한 영역";position:absolute;top:auto;bottom:4px;left:50%;transform:translateX(-50%);background:var(--clay);color:#fff;font-size:11px;padding:2px 8px;white-space:nowrap;font-family:"IBM Plex Sans KR",sans-serif;font-weight:600}
+.roof.last::before{display:none}
+/* back-to-map chip on slides */
+.tomap{position:absolute;right:24px;top:18px;font:inherit;font-size:12px;background:rgba(0,0,0,.05);color:var(--mute);border:1px solid var(--line);padding:4px 10px;border-radius:14px;cursor:pointer;z-index:2}
+.dark .tomap{background:rgba(255,255,255,.08);color:#C9D6CC;border-color:rgba(255,255,255,.2)}
+.tomap:hover{background:var(--marigold);color:var(--ink)}
+.slide [data-go]{cursor:pointer}
+@media print{#topbar,.tomap,.maphint{display:none}}
+
+/* ===== two-tier menu (override) ===== */
+#topbar{height:52px;padding:0 12px;gap:4px;align-items:flex-end;border-bottom:0}
+#topbar .home{margin:9px 12px 9px 0;align-self:center;background:transparent;color:#F3F1E8;border:1px solid rgba(255,255,255,.3)}
+#topbar .home.cur{background:var(--marigold);color:var(--ink);border-color:var(--marigold)}
+#topbar .menu{height:42px}
+#topbar .mbtn{padding:0 16px;border-radius:6px 6px 0 0;border-bottom:0;font-size:14.5px;color:#C9D6CC}
+#topbar .mbtn:hover{background:rgba(255,255,255,.07)}
+#topbar .menu.cur .mbtn{background:#F3EBD5;color:var(--forest);font-weight:700}
+#topbar .crumb{align-self:center}
+#subbar{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top,0px) + 52px);height:44px;z-index:9;background:#F3EBD5;display:flex;align-items:center;gap:4px;padding:0 12px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #D9CBA6;scrollbar-width:thin}
+#subbar[data-k=map]{background:#1E3129;border-bottom-color:#1E3129}
+#subbar .subhint{font-size:13px;color:#B9C8BD;padding-left:6px}
+#subbar .parent{font:inherit;font-size:13.5px;font-weight:700;color:#fff;background:var(--forest);border:0;padding:6px 12px;border-radius:4px;cursor:pointer;flex:none}
+#subbar .subarrow{color:var(--moss);font-size:20px;padding:0 2px;flex:none}
+#subbar .grp{font-size:12px;font-weight:700;color:#7A3322;padding:3px 8px;margin-left:8px;border-left:3px solid #7A3322;flex:none}
+#subbar .sitem{font:inherit;font-size:13.5px;color:var(--ink);background:transparent;border:1px solid transparent;padding:5px 11px;border-radius:16px;cursor:pointer;flex:none}
+#subbar .sitem i{font-style:normal;font-size:11.5px;font-weight:700;color:var(--moss);margin-right:5px}
+#subbar .sitem:hover{background:#fff;border-color:#D9CBA6}
+#subbar .sitem.on{background:var(--forest);color:#fff;font-weight:600}
+#subbar .sitem.on i{color:var(--marigold)}
+#subbar button:focus-visible{outline:2px solid var(--clay);outline-offset:1px}
+#subbar{height:auto;min-height:44px;flex-wrap:wrap;overflow:visible;white-space:normal;padding:6px 12px;row-gap:4px}#subbar.dense .sitem{font-size:12.5px;padding:4px 8px}#subbar.dense .grp{margin-left:4px;padding:3px 6px}
+@media print{#subbar{display:none}}
+
+/* ===== books ===== */
+.bookflow{display:flex;flex-direction:column;gap:6px}
+.bookflow div{display:grid;grid-template-columns:34px 110px 1fr;align-items:center;background:#fff;border-left:4px solid var(--marigold);padding:9px 12px}
+.bookflow i{font-style:normal;font-family:"Gowun Batang",serif;font-size:22px;color:var(--clay)}
+.bookflow b{font-size:15px}.bookflow span{font-size:13px;color:var(--mute);line-height:1.45}
+.shelf{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;margin-top:18px;align-items:end;padding-bottom:12px;border-bottom:10px solid #8A6A45}
+.book{display:flex;flex-direction:column;height:400px;padding:14px 10px 12px;color:#fff;text-decoration:none;position:relative;border-radius:2px 6px 6px 2px;box-shadow:inset 6px 0 0 rgba(0,0,0,.18),0 6px 12px rgba(0,0,0,.18);transition:transform .15s}
+.book:hover,.book:focus-visible{transform:translateY(-8px)}
+.book:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+.book .cat{align-self:flex-start;font-size:11px;font-weight:700;background:rgba(255,255,255,.18);padding:2px 7px;border-radius:10px}
+.book b{font-family:"Gowun Batang",serif;font-size:16px;line-height:1.35;margin-top:18px}
+.book small{font-size:11.5px;line-height:1.4;margin-top:10px;opacity:.9}
+.book em{font-style:normal;font-size:11px;margin-top:auto;color:var(--marigold);font-weight:600}
+.c1{background:#23392F}.c2{background:#6E3B2E}.c3{background:#3F4A6B}.c4{background:#B8452E}.c5{background:#3F5E4F}.c6{background:#6B5B8C}.c7{background:#5E6E3A}.c8{background:#8A6A45}
+.c9{background:#F3EBD5;color:var(--ink)}.c9 .cat{background:var(--clay);color:#fff}.c9 em{color:var(--clay)}
+.book:nth-child(odd){height:420px}
+.allbooks{font-size:14px;font-weight:600;color:#fff;background:var(--forest);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap}
+.allbooks:hover{background:var(--moss)}
+.mapbooks{position:absolute;right:40px;top:26px;font:inherit;font-size:12.5px;font-weight:600;background:#fff;border:1px solid var(--marigold)!important;padding:6px 12px;border-radius:16px;color:var(--forest)}
+.mapbooks:hover{background:#FFF1CF}
+</style>
+</head>
+<body>
+<nav id="topbar" aria-label="발표 파트 메뉴"></nav>
+<nav id="subbar" aria-label="세부 슬라이드 메뉴"></nav>
+<div id="bar"></div>
+<div id="viewport"><div id="stage">
+
+<!-- 0 OVERVIEW MAP -->
+<section id="map" data-sec="map" class="slide mapslide" data-title="전체 구조도">
+  <button class="mapbooks" data-go="sbooks2">📚 K-치유문화 아마존 전자책</button>
+  <div class="maphead">
+    <p class="kicker" style="margin:0">발제 2 전체 구조도 · 원하는 영역을 눌러 들어가세요</p>
+    <h2 style="font-size:28px;margin:4px 0 0">치유관광자원을 활용한 K-치유관광 대국 육성 전략</h2>
+  </div>
+
+  <!-- left: problem -->
+  <div class="mcol left">
+    <button class="node n-I" data-go="s3" data-node="I"><span class="nn">Ⅰ</span><b>왜 지금인가</b><small>법·자원·시장의 동시 전환</small></button>
+    <div class="chips">
+      <button data-go="s4">3대 전환</button><button data-go="s5">시장 수치</button><button data-go="s6">법제 진화</button><button data-go="s7">10대 법정자원</button>
+    </div>
+    <div class="arrowdown" aria-hidden="true"></div>
+    <button class="node n-II" data-go="s8" data-node="II"><span class="nn">Ⅱ</span><b>분절의 진단</b><small>5개 부처·5개 법률, 창구·이름·척도의 부재</small></button>
+    <div class="chips">
+      <button data-go="s9">부처 사각지대</button><button data-go="s10">등록제 3대 현안</button><button data-go="s11">10개 분야 종합</button><button data-go="s12">공통 진단</button>
+    </div>
+  </div>
+  <div class="bigarrow a1" aria-hidden="true"></div>
+
+  <!-- center: temple -->
+  <div class="temple">
+    <button class="roof" data-go="s19" data-node="IV0"><b>K-치유관광 대국</b><small>Real Wonderland, Korea · 고부가가치 국가 전략산업</small></button>
+    <div class="pillars">
+      <button class="pil p1" data-go="s20" data-node="IV1"><span class="pn">1</span><b>대통령 직속<br>치유관광 통합<br>컨트롤타워</b><em>하나의 창구</em><small>통합 인증 · 산업지구 · 예산 · 브랜드 승인</small></button>
+      <button class="pil p2" data-go="s22" data-node="IV2"><span class="pn">2</span><b>K-MediWell<br>국가브랜드</b><em>하나의 이름</em><small>MediWell(회복) × WellMedi(예방) · 등급 인증</small></button>
+      <button class="pil p3" data-go="s25" data-node="IV3"><span class="pn">3</span><b>K-치유지수 기반<br>Web3.0<br>치유관광플랫폼</b><em>하나의 척도</em><small>EEG·HRV·접지 측정 · AI 처방 · 데이터 주권</small></button>
+    </div>
+    <button class="found" data-go="s13" data-node="III"><span class="nn">Ⅲ</span><b>맨발걷기 허브 — 모든 치유는 땅을 딛는 것에서</b><small>전국 2,000+ 맨발걷기길을 접점으로 치유자원을 하나의 여정으로 연결</small></button>
+    <div class="ground">
+      <button data-go="s11">맨발걷기</button><button data-go="s11">산림</button><button data-go="s11">해양</button><button data-go="s11">치유농업</button><button data-go="s11">관광</button><button data-go="s11">음식</button><button data-go="s11">명상</button><button data-go="s11">요가</button><button data-go="s11">예술</button><button data-go="s11">의료</button>
+    </div>
+  </div>
+  <div class="bigarrow a2" aria-hidden="true"></div>
+
+  <!-- right: execution -->
+  <div class="mcol right">
+    <button class="node n-V" data-go="s28" data-node="V"><span class="nn">Ⅴ</span><b>실행 과제</b><small>제도를 넘어 생태계로</small></button>
+    <div class="chips">
+      <button data-go="s29">1인 창업·인력</button><button data-go="s30">5개년 예산</button><button data-go="s31">국회에 바랍니다</button><button data-go="s32">3단계 로드맵</button>
+    </div>
+    <div class="arrowdown" aria-hidden="true"></div>
+    <button class="node n-end" data-go="s33" data-node="end"><span class="nn">◎</span><b>맺음말</b><small>하나의 창구, 하나의 이름, 하나의 척도</small></button>
+    <div class="chips">
+      <button data-go="s1">표지</button><button data-go="s2">오늘 드릴 말씀</button>
+    </div>
+  </div>
+  <p class="maphint">방향키로 순서대로 발표 · 상단 메뉴로 영역 이동 · Esc 또는 M 키로 언제든 이 구조도로 돌아옵니다</p>
+</section>
+
+<!-- 1 COVER -->
+<section id="s1" data-sec="intro" class="slide dark" data-title="표지">
+  <p class="small" style="color:var(--marigold);font-weight:600">「치유관광산업 육성에 관한 법률」 시행 기념 2026 K-치유관광 육성·발전 국회 정책토론회 발제 2</p>
+  <h1 style="margin-top:70px;max-width:900px">치유관광자원을 활용한<br>K-치유관광 대국 육성 전략</h1>
+  <p class="serif" style="font-size:22px;margin-top:22px;color:#E8E2CF">분절된 치유자원을 하나로 — 통합 컨트롤타워, K-MediWell 국가브랜드, K-치유지수 플랫폼</p>
+  <div style="position:absolute;left:72px;bottom:70px">
+    <p style="font-size:20px;font-weight:600">이용근 교수</p>
+    <p class="mute">국립공주대학교 스마트의료웰니스관광대학원 주임교수</p>
+    <p class="mute small" style="margin-top:10px">2026. 9. 22.(화) 국회의원회관 대회의실 · 발제 1 및 9개 분야 패널 발표 종합</p>
+  </div>
+  <svg style="position:absolute;right:90px;bottom:70px" width="230" height="300" viewBox="0 0 230 300" aria-hidden="true">
+    <ellipse cx="115" cy="190" rx="78" ry="104" fill="#F2B84B"/>
+    <circle cx="50" cy="62" r="20" fill="#F2B84B"/><circle cx="92" cy="40" r="17" fill="#F2B84B"/><circle cx="130" cy="34" r="15" fill="#F2B84B"/><circle cx="164" cy="42" r="13" fill="#F2B84B"/><circle cx="192" cy="58" r="11" fill="#F2B84B"/>
+  </svg>
+</section>
+
+<!-- 2 MESSAGE MAP -->
+<section id="s2" data-sec="intro" class="slide" data-title="오늘 드릴 말씀">
+  <p class="kicker">오늘 드릴 말씀</p>
+  <h2>자원은 충분합니다. 없는 것은 하나로 묶는 구조입니다</h2>
+  <p class="lead">오늘 토론회에 모인 10개 분야의 발표는 서로 다른 언어로 같은 결론에 닿아 있습니다. 이 발표는 그 결론을 세 개의 국가 과제로 묶어 제안합니다.</p>
+  <div class="grid g3" style="margin-top:8px">
+    <div class="box"><p class="tiny">하나의 창구</p><h3>대통령 직속 치유관광 통합 컨트롤타워</h3><p class="small mute">5개 부처·5개 법률로 흩어진 인증·지구지정·예산·브랜드 승인을 단일 창구로 모읍니다.</p></div>
+    <div class="box gold"><p class="tiny">하나의 이름</p><h3>K-MediWell 국가브랜드</h3><p class="small mute">산림·해양·농업·음식·명상·요가·예술·의료를 세계에 하나의 이름, Real Wonderland Korea로 알립니다.</p></div>
+    <div class="box clay"><p class="tiny">하나의 척도</p><h3>K-치유지수(KHI) 기반 Web3.0 플랫폼</h3><p class="small mute">치유효과를 과학적으로 측정해 인증·가격·보험·송출의 근거로 삼는 고부가가치 산업 인프라를 만듭니다.</p></div>
+  </div>
+  <div class="band">치유관광은 개별 치유산업의 합이 아니라, 이를 하나의 국가 경쟁력으로 엮는 <em>패키지형 융합산업</em>입니다.</div>
+  <div class="foot"><span>K-치유관광 육성·발전 국회 정책토론회 · 발제 2</span><span>02</span></div>
+</section>
+
+<!-- PART I -->
+<section id="s3" data-sec="I" class="slide dark part" data-title="Ⅰ. 왜 지금인가">
+  <p class="kicker">Part Ⅰ</p>
+  <h1>왜 지금, 치유관광 대국인가</h1>
+  <p class="lead">법이 생겼고, 시장이 움직이고, 지역은 사람을 기다립니다.</p>
+  <div class="numeral">Ⅰ</div>
+</section>
+
+<!-- 4 THREE SHIFTS -->
+<section id="s4" data-sec="I" class="slide" data-title="세 가지 전환">
+  <p class="kicker">문제 제기</p>
+  <h2>법·자원·시장, 세 가지가 동시에 바뀌고 있습니다</h2>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="box"><h3>법적 전환점</h3><p class="small">2026년 4월 9일 「치유관광산업 육성에 관한 법률」 시행. 치유관광이 처음으로 독립 산업의 법적 지위를 얻었습니다.</p><p class="small mute" style="margin-top:8px">치유관광시설업(시설·인프라)과 치유관광서비스업(프로그램·상담·케어) 두 축으로 등록합니다.</p></div>
+    <div class="box soil"><h3>분절된 자원</h3><p class="small">해양치유·산림치유·치유농업·원예치유·환경성질환치유가 5개 부처에 따로 흩어져 있어 국가 차원의 통합 브랜드가 없습니다.</p><p class="small mute" style="margin-top:8px">하경희 교수: "자원은 준비됐지만, 정책은 각자다."</p></div>
+    <div class="box gold"><h3>시장의 전환</h3><p class="small">치료 중심 의료관광에서 예방·회복 중심 웰니스관광으로 글로벌 수요가 이동합니다. 두 축을 잇는 융복합 모델이 필요합니다.</p><p class="small mute" style="margin-top:8px">최원유 원장: 시술 후 회복을 책임질 "야외 자연치유"가 한국 의료관광의 빈 조각입니다.</p></div>
+  </div>
+  <div class="band">4개 개별 치유자원법이 <em>자원 관리법</em>이라면, 치유관광산업법은 여러 자원을 하나의 여정으로 엮는 <em>경험 통합법</em>입니다.</div>
+  <div class="foot"><span>출처: 발제 2, 패널 03(관광), 패널 09(의료)</span><span>04</span></div>
+</section>
+
+<!-- 5 NUMBERS -->
+<section id="s5" data-sec="I" class="slide" data-title="숫자로 본 기회">
+  <p class="kicker">시장 근거</p>
+  <h2>웰니스는 이미 관광산업보다 큰 시장입니다</h2>
+  <p class="lead">한국은 자원 대비 저평가된 시장입니다. 외래객은 쉬러 오고, 의료관광객은 더 많이 씁니다.</p>
+  <div class="grid g4">
+    <div class="stat"><b>6.8조 달러</b><span>2024 글로벌 웰니스 경제 규모, 2029년 9.8조 달러 전망 (GWI)</span></div>
+    <div class="stat"><b>12위</b><span>한국 웰니스 경제 세계 순위, 1,190억 달러 규모</span></div>
+    <div class="stat"><b>68.0%</b><span>2024 방한 외래객 1,637만 명 중 여가·위락·휴식 목적 비율</span></div>
+    <div class="stat"><b>89곳</b><span>전국 228개 시군구 중 인구감소지역(39%). 체류가 곧 지역의 생존입니다</span></div>
+  </div>
+  <div class="grid g4" style="margin-top:26px">
+    <div class="stat"><b>117만 명</b><span>2024 방한 외국인 환자 수 (연평균 21.9% 성장)</span></div>
+    <div class="stat"><b>226만 원</b><span>의료관광객 1인 소비. 일반 관광객 187만 원보다 20% 높고 61.7%가 비의료 소비</span></div>
+    <div class="stat"><b>2,000+</b><span>전국 맨발걷기길·황톳길. 지자체 85%가 활성화 조례 제정</span></div>
+    <div class="stat"><b>2배</b><span>K-도심 의료와 지역 어싱을 결합해 평균 체류 5일 이상 시 기대되는 경제 파급 효과</span></div>
+  </div>
+  <div class="foot"><span>출처: Global Wellness Institute, 한국관광공사, 한국보건산업진흥원, 발제 1·2, 패널 03·09</span><span>05</span></div>
+</section>
+
+<!-- 6 LAW EVOLUTION -->
+<section id="s6" data-sec="I" class="slide" data-title="법제의 진화">
+  <p class="kicker">법적 기반</p>
+  <h2>부문별 개별법에서 융복합 통합법으로 — 20년에 걸친 진화</h2>
+  <table style="margin-top:16px">
+    <tr><th style="width:26%">법률</th><th style="width:14%">시행</th><th style="width:16%">소관</th><th>핵심 제도</th><th style="width:18%">전문 자격</th></tr>
+    <tr><td>산림문화·휴양에 관한 법률</td><td>2005년</td><td>산림청</td><td>치유의 숲 69개소, 자연휴양림 174개소</td><td>산림치유지도사 약 2,100명</td></tr>
+    <tr><td>해양치유자원의 관리 및 활용에 관한 법률</td><td>2021. 2. 19.</td><td>해양수산부</td><td>해양치유센터 거점: 완도·태안·고성·울진·제주</td><td>전문인력 양성기관 지정(단국대·조선대)</td></tr>
+    <tr><td>치유농업 연구개발 및 육성에 관한 법률</td><td>2021. 3. 25.</td><td>농촌진흥청</td><td>우수 치유농업시설 91개소(2025)</td><td>치유농업사 391명</td></tr>
+    <tr><td>수목원·정원의 조성 및 진흥에 관한 법률</td><td>2021. 6. 25.(개정)</td><td>산림청</td><td>정원치유·원예치유</td><td>—</td></tr>
+    <tr class="hi"><td>치유관광산업 육성에 관한 법률</td><td>2026. 4. 9.</td><td>문화체육관광부</td><td>시설업·서비스업 등록, 치유관광산업지구, 맨발걷기길을 법정 치유관광자원으로 명시</td><td>전문인력 요건(국가자격 논의 중)</td></tr>
+  </table>
+  <div class="band" style="margin-top:22px">법은 협의·조정권(제7조)을 두고 있으나, 여러 부처가 이를 실질적으로 작동시킬 <em>상위 조정 주체</em>는 아직 없습니다.</div>
+  <div class="foot"><span>출처: 패널 03(하경희), 패널 04(박민근), 패널 02(장태수)</span><span>06</span></div>
+</section>
+
+<!-- 7 10 resources -->
+<section id="s7" data-sec="I" class="slide" data-title="10대 법정 치유관광자원">
+  <p class="kicker">시행령 기준 분류</p>
+  <h2>10대 법정 치유관광자원의 4대 분류체계</h2>
+  <p class="lead">경관·온천·맨발걷기길·음식·공예·무용·미술·음악·명상·체육. 맨발걷기길은 자원환경 기반형의 핵심 자원이며, 다른 모든 유형과 결합되는 기준점입니다.</p>
+  <div class="grid g4">
+    <div class="box" style="background:var(--forest);color:#fff;border-color:var(--marigold)"><h3>자원환경 기반형</h3><p class="small" style="color:#D5DFD7">자연환경 기반 회복 자원</p><div class="pill-row" style="margin-top:12px"><span class="tag">경관</span><span class="tag">온천</span><span class="tag g">맨발걷기길(핵심)</span></div></div>
+    <div class="box soil" style="background:#F4EADC"><h3>생활문화 기반형</h3><p class="small mute">일상·지역문화 매개 자원</p><div class="pill-row" style="margin-top:12px"><span class="tag">음식</span><span class="tag">공예</span></div></div>
+    <div class="box plum" style="background:#ECE8F3"><h3>예술문화 기반형</h3><p class="small mute">창작·감상·표현 자원</p><div class="pill-row" style="margin-top:12px"><span class="tag">무용</span><span class="tag">미술</span><span class="tag">음악</span></div></div>
+    <div class="box" style="background:#E3EEE6"><h3>심신수련 기반형</h3><p class="small mute">자기 수련·성찰 자원</p><div class="pill-row" style="margin-top:12px"><span class="tag">명상</span><span class="tag">체육</span></div></div>
+  </div>
+  <div class="grid g4" style="margin-top:18px">
+    <div class="small"><b>지역 특화자원 확장</b></div>
+    <div class="small mute">자연 지형: 산림·해양·강·호수·섬</div>
+    <div class="small mute">정원·식생: 정원·식물원·약초 / 전통·역사: 사찰·한옥·미술관·박물관·고궁</div>
+    <div class="small mute">웰빙·라이프스타일: 차(茶)·둘레길</div>
+  </div>
+  <div class="foot"><span>출처: 발제 2</span><span>07</span></div>
+</section>
+
+<!-- PART II -->
+<section id="s8" data-sec="II" class="slide dark part" data-title="Ⅱ. 분절의 진단">
+  <p class="kicker">Part Ⅱ</p>
+  <h1>분절의 진단 — 10개 분야가 같은 문제를 말합니다</h1>
+  <p class="lead">부처는 자원을 따로 관리하고, 관광객은 하나의 여정을 원합니다.</p>
+  <div class="numeral">Ⅱ</div>
+</section>
+
+<!-- 9 SILO -->
+<section id="s9" data-sec="II" class="slide" data-title="5개 부처 사각지대">
+  <p class="kicker">현황 진단</p>
+  <h2>5개 부처, 5대 치유자원 — 흩어진 정책이 낳는 사각지대</h2>
+  <table style="margin-top:14px">
+    <tr><th>치유자원</th><th>소관 부처</th><th>근거</th><th>현장의 이슈</th></tr>
+    <tr><td>해양치유</td><td>해양수산부</td><td>해양치유자원법</td><td>해양기후·해수·염지하수 기반 요법, 국가자격 부재</td></tr>
+    <tr><td>산림치유</td><td>산림청</td><td>산림문화휴양법</td><td>숲·피톤치드 기반 산림테라피, 관광 연계·상품화 부족</td></tr>
+    <tr><td>치유농업</td><td>농림축산식품부·농촌진흥청</td><td>치유농업법</td><td>숙박·체험 상품 연계 미흡, 치유관광자원 명시 과제</td></tr>
+    <tr><td>원예·정원치유</td><td>농림축산식품부·산림청</td><td>수목원정원법</td><td>식물·정원 기반 원예작업치료, 체류상품 부재</td></tr>
+    <tr><td>환경성질환치유</td><td>환경부</td><td>환경보건법</td><td>청정환경 기반 관리, 관광 연계 전무</td></tr>
+    <tr><td>의료·건강</td><td>보건복지부</td><td>의료해외진출법</td><td>의료관광이 실내 클리닉·도심 쇼핑에 갇힘</td></tr>
+    <tr class="hi"><td>치유관광(총괄)</td><td>문화체육관광부</td><td>치유관광산업법</td><td>컨트롤타워 권한 부재, 부처 간 조정 수단 없음</td></tr>
+  </table>
+  <div class="band" style="margin-top:18px">문제의 핵심은 자원이 아니라, 관광객 관점의 <em>"하나의 여정"</em>으로 설계·홍보·인증되는 통합 콘텐츠와 컨트롤타워가 없다는 점입니다.</div>
+  <div class="foot"><span>출처: 발제 2, 패널 03(하경희)</span><span>09</span></div>
+</section>
+
+<!-- 10 FIELD ISSUES -->
+<section id="s10" data-sec="II" class="slide" data-title="등록제 3대 현안">
+  <p class="kicker">현장-정책 괴리</p>
+  <h2>왜 등록제가 현장에서 겉도는가 — 3대 핵심 현안</h2>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="box clay"><h3>당위성·유인책의 부재</h3><p class="small">5대 요건 충족, 고도화된 사업계획서, 연 52주 상시 운영, 전문인력 고용을 요구하지만 세제 혜택·인허가 의제 처리·직접 재정지원은 전무합니다.</p><p class="tiny" style="margin-top:8px">"이 제도권 안으로 들어왔을 때 받는 혜택은 무엇입니까?"</p></div>
+    <div class="box clay"><h3>행정 엇박자</h3><p class="small">템플스테이 등 비영리 자원에 '수익 사업자' 요건이 부딪히고, 관광행정 시스템과 신규 등록이 연동되지 않아 수기 행정이 1년 넘게 지연될 위험이 있습니다.</p></div>
+    <div class="box clay"><h3>전문성을 훼손하는 탁상행정</h3><p class="small">국가공인 자격 도입 논의가 20시간 온라인 교육으로 대체되고, 기존 산림·해양 치유 자격 보유자도 3시간 면제에 그칩니다.</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="small"><b>2가지 등록 축</b> 서비스 제공형(숙박시설 불필요, 상시 프로그램 1개·전문인력 1명) / 시설 이용형(관광진흥법상 적법 숙박시설, 상시 프로그램 2개·전문인력 1명)</div>
+    <div class="small"><b>5대 실질 요건</b> 자원성·대상성(관광객)·목적성·운영성·프로그램성, 그리고 연평균 52회 이상 상시 운영</div>
+  </div>
+  <div class="band">국회와 정부의 후속 조치가 없다면 「치유관광산업 육성에 관한 법률」은 <em>'껍데기뿐인 법'</em>에 머물 위험이 있습니다.</div>
+  <div class="foot"><span>출처: 발제 2 부속 정책자료 — 「K-치유관광 생태계의 도약」 국회 문화체육관광위원회 정책세미나(2024. 9.) 재구성</span><span>10</span></div>
+</section>
+
+<!-- 11 SYNTHESIS MATRIX -->
+<section id="s11" data-sec="II" class="slide" data-title="10개 분야 발표 종합">
+  <p class="kicker">토론회 종합</p>
+  <h2>10개 분야 발표 종합 — 모두가 "연결"을 요구합니다</h2>
+  <table style="margin-top:10px;font-size:12.5px">
+    <tr><th style="width:11%">분야</th><th style="width:15%">발표자</th><th style="width:34%">핵심 자산</th><th>핵심 제안 → 통합전략 연결</th></tr>
+    <tr><td>맨발걷기</td><td>박동창</td><td>전국 2,000+ 맨발길, 200만 참여, 접지 임상 근거</td><td>맨발길 위 K-치유관광 인프라 → <span class="tag">허브·플랫폼</span></td></tr>
+    <tr><td>산림치유</td><td>박범진</td><td>치유의 숲, 코르티솔·NK세포·fMRI 실증</td><td>치료·사회적 처방·웰니스 3단계 근거 → <span class="tag c">K-치유지수</span></td></tr>
+    <tr><td>해양치유</td><td>장태수</td><td>5대 해양치유센터, 전문인력 양성기관</td><td>통합 운영체계·자격·표준화 → <span class="tag">컨트롤타워</span></td></tr>
+    <tr><td>관광</td><td>하경희</td><td>시장·인구감소지역·해외 인증 사례</td><td>컨트롤타워+5부처 협력, 의료·보험 연계 → <span class="tag">컨트롤타워</span></td></tr>
+    <tr><td>치유농업</td><td>박민근</td><td>H1~H6 치유산업, 우수시설 91개소</td><td>치유산업청·기본법, 통합 인증제 → <span class="tag">컨트롤타워</span></td></tr>
+    <tr><td>음식치유</td><td>민형기</td><td>통곡물 자연식 치유밥상, 학교급식 모델</td><td>"무엇을 먹는가" 품질지표, Healing K-Food → <span class="tag g">브랜드</span></td></tr>
+    <tr><td>명상치유</td><td>마가스님</td><td>오감·지금 여기, 맨발걷기 명상</td><td>장소가 아닌 마음을 보는 여행 → <span class="tag g">브랜드 서사</span></td></tr>
+    <tr><td>요가치유</td><td>김성원</td><td>몸·호흡·명상 연결 소프트웨어</td><td>K-Healing Stay, 주장에서 데이터로 → <span class="tag c">K-치유지수</span></td></tr>
+    <tr><td>예술치유</td><td>임나영</td><td>뇌·자율신경 회복, 우울·불안 개선 근거</td><td>전문인력·프로그램·기관 3중 인증 → <span class="tag c">K-치유지수</span></td></tr>
+    <tr><td>의료관광</td><td>최원유</td><td>외국인 환자 201만(2025 누적), 12.5조 원 파급</td><td>도심 의료+지역 어싱 프리미엄 → <span class="tag g">브랜드</span></td></tr>
+  </table>
+  <div class="foot"><span>출처: 2026 K-치유관광 육성·발전 국회 정책토론회 자료집</span><span>11</span></div>
+</section>
+
+<!-- 12 VOICES -->
+<section id="s12" data-sec="II" class="slide" data-title="패널의 공통 진단">
+  <p class="kicker">공통 진단</p>
+  <h2>서로 다른 분야, 같은 결론</h2>
+  <div class="grid g2" style="margin-top:20px;gap:22px 40px">
+    <p class="quote">"부처 간 격벽을 넘어, 전국의 관광자원을 새로운 고부가가치 산업으로 도약시키자." <span class="small mute">— 하경희, 관광</span></p>
+    <p class="quote">"부처 간 협업과 법·제도 정비를 통해 K-치유관광시대에 맞는 융합전략을 펼쳐야 합니다." <span class="small mute">— 박민근, 치유농업</span></p>
+    <p class="quote">"좋은 콘텐츠가 있어도 산업이 되지 못한다. 제도 언어·표준 모델·성과 측정·전문인력 연결이 부족하다." <span class="small mute">— 김성원, 요가</span></p>
+    <p class="quote">"콘텐츠는 늘고 있지만, '치유관광의 기준'은 아직 부족합니다." <span class="small mute">— 임나영, 예술</span></p>
+    <p class="quote">"해양치유센터의 분절적 운영과 통합 운영체계의 부재가 산업의 한계입니다." <span class="small mute">— 장태수, 해양</span></p>
+    <p class="quote">"국가는 기반·제도를 만들고, 업계는 상품·시장을 만든다." <span class="small mute">— 박동창, 맨발걷기</span></p>
+  </div>
+  <div class="band">진단은 하나입니다. <em>기준(척도)</em>, <em>창구(거버넌스)</em>, <em>이름(브랜드)</em>이 없습니다.</div>
+  <div class="foot"><span>각 발표 요지 재구성</span><span>12</span></div>
+</section>
+
+<!-- PART III -->
+<section id="s13" data-sec="III" class="slide dark part" data-title="Ⅲ. 공통분모: 맨발걷기 허브">
+  <p class="kicker">Part Ⅲ</p>
+  <h1>모든 치유는 땅을 딛는 것에서 시작됩니다</h1>
+  <p class="lead">흩어진 자원을 잇는 물리적 접점, 맨발걷기길이 K-치유관광의 허브입니다.</p>
+  <div class="numeral">Ⅲ</div>
+</section>
+
+<!-- 14 SCIENCE -->
+<section id="s14" data-sec="III" class="slide" data-title="과학적 근거">
+  <p class="kicker">치유의 근원</p>
+  <h2>이미 측정되고 있는 치유효과 — 산업의 언어는 데이터입니다</h2>
+  <div class="grid g3" style="margin-top:14px">
+    <div class="box gold"><h3>맨발걷기·접지</h3><ul class="clean small">
+      <li>Pawel Sokal(2025, J. Clin. Med.) 척추 수술 후 접지군: 통증 약 2배 감소, 염증 반응 약 3배 억제, 근손상 회복 약 2배 가속</li>
+      <li>KBS 「생로병사의 비밀」(2023) 맨발걷기 4주 후 NK세포 활성 증가</li>
+      <li>양파·우유·금붕어·고무나무 접지 실험</li></ul></div>
+    <div class="box"><h3>산림치유</h3><ul class="clean small">
+      <li>숲 경관 감상·걷기 시 타액 코르티솔 유의 감소(N=260/74, Park et al. 2010)</li>
+      <li>숲 체류 후 NK세포 활성 증가, 30일 지속(Li et al. 2008)</li>
+      <li>POMS 긴장·우울·분노·피로 감소, 활기 증가</li></ul></div>
+    <div class="box plum"><h3>예술·요가·명상</h3><ul class="clean small">
+      <li>예술치유 메타분석: 우울 효과크기 -0.69(14개 연구 861명), 불안 -1.31(35개 RCT 3,167명)</li>
+      <li>요가: 스트레스·수면·신체활동 측정 모델</li>
+      <li>명상: 오감 회복, 자율신경 안정</li></ul></div>
+  </div>
+  <div class="band">과제는 이 흩어진 근거들을 <em>하나의 공통 척도</em>로 모으는 것입니다. 이것이 K-치유지수(KHI)가 필요한 이유입니다.</div>
+  <div class="foot"><span>출처: 발제 1(박동창), 패널 01(박범진), 패널 08(임나영), 패널 07(김성원)</span><span>14</span></div>
+</section>
+
+<!-- 15 HUB -->
+<section id="s15" data-sec="III" class="slide" data-title="맨발걷기 허브 모델">
+  <p class="kicker">통합 플랫폼</p>
+  <h2>맨발걷기 허브 모델 — 접지에서 국가 브랜드로</h2>
+  <div style="display:grid;grid-template-columns:560px 1fr;gap:36px;margin-top:4px;align-items:center">
+    <svg viewBox="0 0 560 520" width="560" height="520" role="img" aria-label="맨발걷기를 중심으로 9개 치유자원이 연결된 허브 도식">
+      <g stroke="#CBD5CC" stroke-width="2">
+        <line x1="280" y1="260" x2="280" y2="60"/><line x1="280" y1="260" x2="437" y2="116"/><line x1="280" y1="260" x2="490" y2="260"/><line x1="280" y1="260" x2="437" y2="404"/><line x1="280" y1="260" x2="280" y2="460"/><line x1="280" y1="260" x2="123" y2="404"/><line x1="280" y1="260" x2="70" y2="260"/><line x1="280" y1="260" x2="123" y2="116"/>
+      </g>
+      <circle cx="280" cy="260" r="232" fill="none" stroke="#F2B84B" stroke-width="2" stroke-dasharray="4 6"/>
+      <g font-family="IBM Plex Sans KR, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
+        <g><circle cx="280" cy="52" r="40" fill="#3F5E4F"/><text x="280" y="57" fill="#fff">산림</text></g>
+        <g><circle cx="437" cy="116" r="40" fill="#3F5E4F"/><text x="437" y="121" fill="#fff">해양</text></g>
+        <g><circle cx="496" cy="260" r="40" fill="#3F5E4F"/><text x="496" y="265" fill="#fff">치유농업</text></g>
+        <g><circle cx="437" cy="404" r="40" fill="#8A6A45"/><text x="437" y="409" fill="#fff">음식</text></g>
+        <g><circle cx="280" cy="468" r="40" fill="#6B5B8C"/><text x="280" y="473" fill="#fff">예술</text></g>
+        <g><circle cx="123" cy="404" r="40" fill="#5E7F6E"/><text x="123" y="409" fill="#fff">요가</text></g>
+        <g><circle cx="64" cy="260" r="40" fill="#5E7F6E"/><text x="64" y="265" fill="#fff">명상</text></g>
+        <g><circle cx="123" cy="116" r="40" fill="#B8452E"/><text x="123" y="121" fill="#fff">의료</text></g>
+      </g>
+      <circle cx="280" cy="260" r="92" fill="#F2B84B"/>
+      <ellipse cx="280" cy="274" rx="30" ry="42" fill="#23392F"/>
+      <circle cx="254" cy="222" r="8" fill="#23392F"/><circle cx="271" cy="213" r="7" fill="#23392F"/><circle cx="287" cy="211" r="6" fill="#23392F"/><circle cx="301" cy="215" r="5" fill="#23392F"/>
+      <text x="280" y="336" text-anchor="middle" font-family="Gowun Batang, serif" font-size="17" font-weight="700" fill="#23392F">맨발걷기길</text>
+    </svg>
+    <div>
+      <div class="box gold" style="margin-bottom:12px"><h3>① 접지</h3><p class="small">맨발걷기길을 법정 치유관광자원이자 접점으로 삼아 산림·해양·농업·원예·환경 치유자원을 물리적으로 연결합니다. 신설 없이 기존 2,000+ 길을 재구성합니다.</p></div>
+      <div class="box" style="margin-bottom:12px"><h3>② 콘텐츠</h3><p class="small">K-MediWell(의료→회복)과 K-WellMedi(웰니스→예방) 프로그램으로 여정을 설계하고, 음식·명상·요가·예술이 하루의 리듬을 완성합니다.</p></div>
+      <div class="box clay"><h3>③ 브랜드</h3><p class="small">K-MediWell 국가브랜드로 Real Wonderland Korea를 세계에 발신합니다.</p></div>
+      <p class="small mute" style="margin-top:12px">"치유관광의 최소 공통분모는 값비싼 시설이 아니라, 맨발로 땅을 딛는 순간입니다."</p>
+    </div>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 발제 1</span><span>15</span></div>
+</section>
+
+<!-- 16 JOURNEY -->
+<section id="s16" data-sec="III" class="slide" data-title="하나의 치유 여정">
+  <p class="kicker">융합 설계</p>
+  <h2>프로그램을 나열하지 말고, 치유 여정을 설계해야 합니다</h2>
+  <p class="lead">각 패널이 제안한 요소를 하나의 하루로 엮으면, 그 자체가 세계 어디에도 없는 K-치유관광 상품이 됩니다.</p>
+  <div class="flow" style="margin-top:6px">
+    <div class="st"><i>아침</i><b>깨움·맨발걷기</b><span>숲길·흙길 접지, 호흡 요가 (박동창·김성원)</span></div>
+    <div class="st"><i>오전</i><b>자연 속 회복</b><span>산림·해양·치유농장 체험 (박범진·장태수·박민근)</span></div>
+    <div class="st"><i>점심</i><b>통곡물 치유밥상</b><span>지역 제철 식재료 자연식 (민형기)</span></div>
+    <div class="st"><i>오후</i><b>표현·의미화</b><span>예술치유, 감각→표현→조절→관계 (임나영)</span></div>
+    <div class="st"><i>저녁</i><b>명상·숙면</b><span>지금 여기, 마음을 보는 여행 (마가스님)</span></div>
+    <div class="st"><i>측정</i><b>K-치유지수</b><span>사전·사후 EEG·HRV·접지 측정 리포트</span></div>
+  </div>
+  <table style="margin-top:26px">
+    <tr><th>체류 표준 모델</th><th>요가치유(김성원)</th><th>의료관광(최원유)</th><th>맨발·갯벌(박동창)</th><th>예술치유(임나영)</th></tr>
+    <tr><td><b>입문형</b></td><td>2박 3일</td><td>1DAY K-Recovery</td><td>3~5시간 프로그램</td><td rowspan="3">4일 K-Arts Healing Journey<br><span class="tiny">감각의 안정 → 표현 → 의미의 재구성 → 일상 연결</span></td></tr>
+    <tr><td><b>회복형</b></td><td>6박 7일</td><td>2N3D K-Wellness Reset</td><td>3~7일 체류형 패키지</td></tr>
+    <tr><td><b>장기체류형</b></td><td>21일 이상</td><td>4N5D Deep Retreat</td><td>1~3달 체류형</td></tr>
+  </table>
+  <div class="foot"><span>출처: 패널 01~09 재구성</span><span>16</span></div>
+</section>
+
+<!-- 17 REGIONAL -->
+<section id="s17" data-sec="III" class="slide" data-title="권역별 시그니처 벨트">
+  <p class="kicker">지역특화 모델</p>
+  <h2>이미 전국에 깔려 있는 길 — 신설이 아니라 "재구성"의 전략</h2>
+  <div class="grid g4" style="margin-top:14px">
+    <div class="box"><p class="tiny">수도권</p><h3>인천 하나개 갯벌</h3><p class="small">인천공항과 연계한 갯벌 맨발걷기·치유숙소·힐링음악. 경유객 3~5시간 프로그램부터 장기 체류까지</p></div>
+    <div class="box"><p class="tiny">강원권</p><h3>속초·설악산·온천</h3><p class="small">영랑호·청초호 황톳길, 신흥사 템플스테이 명상, 설악산 절경과 온천</p></div>
+    <div class="box"><p class="tiny">영남권</p><h3>함양 1000년 상림숲</h3><p class="small">상림숲 맨발걷기, 100년 맨발 타임캡슐, 산삼·약초 연계</p></div>
+    <div class="box"><p class="tiny">호남권</p><h3>신안·무안·순천</h3><p class="small">유네스코 세계자연유산 갯벌, 무안 600리 황토갯벌, 순천만습지</p></div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="box gold"><h3>순천 오천그린광장 12.5km</h3><p class="small">6만 평 잔디광장과 갯벌·노을·명상을 잇는 대한민국 대표 K-생태치유 성지. K-MediWell 국내 최고 플래그십 모델</p></div>
+    <div class="box gold"><h3>대전 계족산 황톳길 14.5km</h3><p class="small">한국관광 100선 연속 선정. 황톳길과 유성온천을 잇는 수술 후 회복 애프터케어 코스</p></div>
+    <div class="box gold"><h3>공주·세종 금강수목원</h3><p class="small">4계절 맨발숲길, 치유농업·원예치유 연계. 국내 제1호 치유관광산업지구로 추진 중인 거점 사례</p></div>
+  </div>
+  <div class="band">공식은 단순합니다. <em>맨발걷기(코어) + 지역특화자원 + MediWell/WellMedi 목적 설정 = 지역 브랜드 K-치유관광 프로그램</em></div>
+  <div class="foot"><span>출처: 발제 1(박동창), 발제 2</span><span>17</span></div>
+</section>
+
+<!-- PART IV -->
+<section id="s18" data-sec="IV0" class="slide dark part" data-title="Ⅳ. 3대 핵심 전략">
+  <p class="kicker">Part Ⅳ</p>
+  <h1>하나의 창구, 하나의 이름, 하나의 척도</h1>
+  <p class="lead">K-치유관광 대국 도약을 위한 3대 핵심 전략</p>
+  <div class="numeral">Ⅳ</div>
+</section>
+
+<!-- 19 THREE PILLARS -->
+<section id="s19" data-sec="IV0" class="slide" data-title="3대 전략 개요">
+  <p class="kicker">3대 핵심 전략</p>
+  <h2>거버넌스가 기반을, 브랜드가 수요를, 데이터가 가치를 만듭니다</h2>
+  <div class="grid g3" style="margin-top:18px;gap:14px">
+    <div class="pillar" style="background:var(--forest)"><div class="n">1</div><h3>대통령 직속 치유관광 통합 컨트롤타워</h3><p class="motto">하나의 창구</p><ul class="clean">
+      <li>5개 부처 치유자원 정책 조정</li><li>통합 인증·산업지구 지정·예산 배분</li><li>국제 브랜드 승인 단일 창구</li><li>분절된 자격·인력 체계 통합</li></ul></div>
+    <div class="pillar" style="background:#6E5A2E"><div class="n">2</div><h3>K-MediWell 국가브랜드</h3><p class="motto">하나의 이름</p><ul class="clean">
+      <li>Real Wonderland, Korea 국가 슬로건</li><li>K-MediWell(회복) × K-WellMedi(예방)</li><li>Certified·Premium·Flagship 등급</li><li>해외 송출·보험사 연계</li></ul></div>
+    <div class="pillar" style="background:#7A3322"><div class="n">3</div><h3>K-치유지수 기반 Web3.0 치유관광플랫폼</h3><p class="motto">하나의 척도</p><ul class="clean">
+      <li>뇌파·자율신경·접지 3축 측정</li><li>AI 맞춤 처방·다국어 리포트</li><li>개인 데이터 주권, 인증 이력 투명화</li><li>1인 창업자 예약·정산 통합</li></ul></div>
+  </div>
+  <div class="foot"><span>발제 2 핵심 제안</span><span>19</span></div>
+</section>
+
+<!-- 20 CONTROL TOWER ORG -->
+<section id="s20" data-sec="IV1" class="slide" data-title="전략 1: 통합 컨트롤타워">
+  <p class="kicker">전략 1 · 거버넌스</p>
+  <h2>분절된 부처를 하나로 — 대통령 직속 치유관광 통합 컨트롤타워</h2>
+  <div class="org" style="margin-top:18px">
+    <div class="top">대통령 직속 K-치유관광 통합추진위원회</div>
+    <div class="vline"></div>
+    <div class="sec">사무국(문화체육관광부) · 민관 합동 자문단(학계·협회·맨발걷기국민운동본부·지자체)</div>
+    <div class="row">
+      <div>보건복지부<span>의료관광·애프터케어</span></div>
+      <div>해양수산부<span>해양치유</span></div>
+      <div>산림청<span>산림치유·정원</span></div>
+      <div>문화체육관광부<span>치유관광·웰니스</span></div>
+      <div>농식품부·농진청<span>치유농업·원예</span></div>
+      <div>환경부<span>환경성질환치유</span></div>
+      <div>외교부·법무부<span>비자·국제협력</span></div>
+      <div>행안부·지자체<span>인구감소지역·지구</span></div>
+    </div>
+  </div>
+  <div class="grid g4" style="margin-top:22px">
+    <div class="box gold"><h3>통합 인증</h3><p class="small">6대 자원 융복합 인증 기준을 조율하고 부처별 인증을 상호 인정합니다.</p></div>
+    <div class="box gold"><h3>산업지구·예산</h3><p class="small">치유관광산업지구 지정과 부처 예산 배분을 한 번에 결정합니다.</p></div>
+    <div class="box gold"><h3>브랜드 승인</h3><p class="small">K-MediWell 국제 인증·해외 마케팅을 단일 창구에서 승인합니다.</p></div>
+    <div class="box gold"><h3>성과 데이터</h3><p class="small">K-치유지수를 부처 공통 성과지표로 삼아 정책을 평가합니다.</p></div>
+  </div>
+  <div class="foot"><span>출처: 발제 2 거버넌스안, 패널 03·04 제안 통합</span><span>20</span></div>
+</section>
+
+<!-- 21 WHY PRESIDENTIAL -->
+<section id="s21" data-sec="IV1" class="slide" data-title="왜 대통령 직속인가">
+  <p class="kicker">전략 1 · 설계 논리</p>
+  <h2>패널 제안을 하나로 — 왜 '대통령 직속'이어야 하는가</h2>
+  <table style="margin-top:14px">
+    <tr><th style="width:18%">제안자</th><th style="width:36%">제안 내용</th><th>통합안에 반영하는 방식</th></tr>
+    <tr><td>하경희(관광)</td><td>문체부 컨트롤타워 + 5부처 협력 거버넌스</td><td>문체부를 사무국으로 두되, 동급 부처 간 조정권은 상위 위원회가 보장</td></tr>
+    <tr><td>박민근(치유농업)</td><td>치유산업부(청) 신설, 치유산업기본법 제정, 부처 공동 협의체</td><td>중장기 2단계 과제로 편입. 1단계는 위원회로 신속 출범</td></tr>
+    <tr><td>박동창(맨발걷기)</td><td>국가는 기반·제도, 운동본부는 표준, 업계는 시장</td><td>민관 합동 자문단에 맨발길 표준·안전 기준 기능 부여</td></tr>
+    <tr><td>장태수(해양)</td><td>해양치유센터 통합 운영체계, 거버넌스 구축</td><td>센터·거점 운영 데이터를 플랫폼으로 통합 관리</td></tr>
+    <tr><td>임나영·김성원</td><td>부처 간 연계, 전문인력·프로그램·기관 인증</td><td>위원회 산하 통합 인증·자격 분과 설치</td></tr>
+  </table>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="box"><h3>1단계(2027) 위원회 출범</h3><p class="small">치유관광산업법 개정으로 대통령 직속 통합추진위원회 설치 근거 마련. 부처 간 조정 권한 명시</p></div>
+    <div class="box clay"><h3>2단계(2029~) 치유산업기본법</h3><p class="small">성과 검증 후 치유산업 전반을 아우르는 기본법 제정과 전담 조직 체계화 검토</p></div>
+  </div>
+  <div class="foot"><span>통합 제안(안) — 토론을 위한 발제자 제안</span><span>21</span></div>
+</section>
+
+<!-- 22 BRAND WHY -->
+<section id="s22" data-sec="IV2" class="slide" data-title="전략 2: 왜 국가브랜드인가">
+  <p class="kicker">전략 2 · 국가브랜드</p>
+  <h2>왜 지금 K-MediWell 국가브랜드가 필요한가</h2>
+  <div class="grid g2" style="margin-top:14px;gap:24px">
+    <div>
+      <div class="box clay"><h3>브랜드 부재의 위험</h3><p class="small">한국 의료·웰니스 관광의 가장 큰 구조적 결함은 국가 차원의 '브랜딩' 부재입니다. 개별 주체가 상품 판매에만 치중하는 사이, '한국' 하면 떠오르는 이미지가 피부과·성형외과로 좁아졌고 자원과 예산은 분산되었습니다.</p></div>
+      <div class="box gold" style="margin-top:14px"><h3>K-MediWell 국가브랜드</h3><p class="small">의료·관광·문화·디지털, 그리고 맨발걷기를 포함한 6대 치유자원을 하나의 플랫폼으로 융합해 인바운드 관광의 질적 도약과 관광수지 개선을 함께 달성하는 국가 전략 모델입니다.</p></div>
+    </div>
+    <div>
+      <table>
+        <tr><th>선도국</th><th>성공 방식</th></tr>
+        <tr><td>독일 쿠어오르트</td><td>350여 개 국가 인증 휴양지, 의사 처방·보험 연계</td></tr>
+        <tr><td>일본 쿠어가르텐</td><td>온천·산림·식사 통합, 8개 전문 코스 인증</td></tr>
+        <tr><td>프랑스 탈라소</td><td>100년 해양요법 전통, 국제 표준(ISO 17680)</td></tr>
+        <tr><td>말레이시아</td><td>'Malaysia Healthcare' 단일 브랜드와 품질 인증으로 관광 수입 75% 증가</td></tr>
+        <tr><td>튀르키예</td><td>국가 통합 포털, SNS 광고비 최대 70% 캐시백</td></tr>
+      </table>
+      <p class="small" style="margin-top:12px">공통점: <b>국가 인증제 + 의료 연계 + 지역·부처 협업</b></p>
+    </div>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 패널 03(하경희), 패널 02(장태수)</span><span>22</span></div>
+</section>
+
+<!-- 23 BRAND ARCH -->
+<section id="s23" data-sec="IV2" class="slide" data-title="브랜드 아키텍처">
+  <p class="kicker">전략 2 · 브랜드 구조</p>
+  <h2>K-MediWell 국가브랜드 아키텍처 — '측정되는 브랜드'</h2>
+  <p class="lead">말레이시아·튀르키예가 마케팅 기반 브랜드라면, 한국은 효과가 측정되는 브랜드로 새로운 카테고리를 선점합니다.</p>
+  <div class="bp">
+    <div class="b1">Real Wonderland, Korea<small>국가 슬로건 · 해외 송출 채널</small></div>
+    <div class="b2">K-MediWell 국가 마스터 브랜드<small>세계 유일, 효과가 측정되는 치유 브랜드</small></div>
+    <div class="b3"><span>K-MediWell<small>의료 → 회복 애프터케어</small></span><span>K-WellMedi<small>웰니스 → 예방의학</small></span></div>
+    <div class="b4"><span>Certified<small>1인 창업 등록형</small></span><span>Premium<small>시설·서비스 결합</small></span><span>Flagship<small>권역 거점·해외 송출</small></span></div>
+    <div class="b5">데이터 근거층 — K-치유지수(KHI) 측정 원장<small>모든 인증 등급은 마케팅이 아니라 측정값으로 결정됩니다</small></div>
+  </div>
+  <div class="foot"><span>출처: 발제 2</span><span>23</span></div>
+</section>
+
+<!-- 24 BRAND CONTENT -->
+<section id="s24" data-sec="IV2" class="slide" data-title="브랜드에 담을 콘텐츠">
+  <p class="kicker">전략 2 · 브랜드 포트폴리오</p>
+  <h2>한 이름 아래 모이는 K-치유 콘텐츠 포트폴리오</h2>
+  <table style="margin-top:12px">
+    <tr><th style="width:15%">치유자원</th><th>K-MediWell (회복·애프터케어)</th><th>K-WellMedi (예방)</th><th style="width:27%">서브 브랜드 제안</th></tr>
+    <tr><td>해양치유</td><td>수술 후 재활, 해양기후요법</td><td>스트레스 예방, 해양레저 웰니스</td><td>K-Thalasso</td></tr>
+    <tr><td>산림치유</td><td>만성질환 회복, 산림테라피</td><td>번아웃 예방, 숲 명상</td><td>K-Forest Therapy</td></tr>
+    <tr><td>치유농업·원예</td><td>정신질환 재활, 농작업치료</td><td>정서 예방, 농촌 체류 힐링</td><td>K-치유농업 빌리지</td></tr>
+    <tr><td>음식치유</td><td>회복식, 통곡물 자연식</td><td>21일 나의 건강밥상 챌린지</td><td>Healing K-Food</td></tr>
+    <tr><td>명상·요가</td><td>자율신경 안정, 수면 회복</td><td>몸·호흡·명상 체류 루틴</td><td>K-Healing Stay</td></tr>
+    <tr><td>예술치유</td><td>우울·불안 회복 지원</td><td>감각·표현 기반 웰니스</td><td>K-Arts Healing</td></tr>
+    <tr><td>의료관광</td><td>시술 후 회복 어싱 패키지</td><td>뷰티·웰니스 리커버리</td><td>K-Medical × K-Earthing</td></tr>
+    <tr class="hi"><td>맨발걷기길</td><td>접지 기반 수술 후 보행 재활</td><td>일상 접지테라피, 예방형 걷기</td><td>K-Barefoot Trail(공통 기반)</td></tr>
+  </table>
+  <div class="band" style="margin-top:14px">"K-POP이 세계인의 귀를, K-드라마가 눈을 열었다면, K-Healing은 세계인의 삶을 건강하게 바꿀 것입니다." <em>Come to Korea, Heal Your Life.</em></div>
+  <div class="foot"><span>출처: 발제 2 매핑표, 패널 05·07·08·09 재구성</span><span>24</span></div>
+</section>
+
+<!-- BOOKS 1 -->
+<section id="sbooks1" data-sec="IV2" class="slide" data-title="K-치유문화 글로벌 전자책 프로젝트">
+  <p class="kicker">전략 2 · 브랜드 실행 사례</p>
+  <h2>책으로 먼저 만나는 한국 — K-MediWell 글로벌 전자책 프로젝트</h2>
+  <p class="lead">세계 치유관광객이 한국을 찾기 전에 먼저 K-치유문화를 읽게 합니다. 아마존에 출간된 영문 전자책은 K-MediWell 국가브랜드를 해외에 알리는 첫 번째 접점입니다.</p>
+  <div class="grid g2" style="gap:24px">
+    <div>
+      <div class="box gold"><h3>공동 추진 주체</h3><p class="small">국립공주대학교 스마트의료웰니스관광대학원 <b>K-MediWell 글로컬 프로젝트팀</b>과 <b>글로벌치유관광협회</b>가 함께 진행하는 K-MediWell 프로젝트 전략의 하나입니다.</p></div>
+      <div class="box" style="margin-top:12px"><h3>목표</h3><p class="small">K-치유관광 대국 육성 전략에 따라 한국 방문을 준비하는 세계 치유관광객에게 한글·국악·명상·전통문화 속 치유의 뿌리를 알려, 한류관광을 한국문화의 원류를 체험하는 치유관광으로 심화시킵니다.</p></div>
+      <div class="box" style="margin-top:12px"><h3>출간 현황</h3><p class="small">한글·국악·명상·국가브랜드·치유여행 영역의 영문 전자책을 아마존 킨들에 출간했으며, 영역별 시리즈로 계속 확장합니다.</p></div>
+    </div>
+    <div>
+      <p class="small" style="font-weight:600;margin-bottom:10px">읽는 사람이 찾아오는 사람이 되는 경로</p>
+      <div class="bookflow">
+        <div><i>1</i><b>읽기</b><span>아마존 전자책으로 K-치유문화를 만난다</span></div>
+        <div><i>2</i><b>알아보기</b><span>다국어 치유관광 언론과 브랜드 콘텐츠로 관심을 넓힌다</span></div>
+        <div><i>3</i><b>예약하기</b><span>K-MediWell 플랫폼에서 치유 프로그램을 고른다</span></div>
+        <div><i>4</i><b>체험·측정</b><span>한국에서 치유를 경험하고 K-치유지수로 확인한다</span></div>
+        <div><i>5</i><b>다시 읽고 다시 오기</b><span>경험이 후속 콘텐츠와 재방문으로 이어진다</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="band">전자책은 홍보물이 아니라 <em>방한 치유관광의 입구</em>입니다. 책 한 권이 한 명의 치유관광객을 만듭니다.</div>
+  <div class="foot"><span>K-MediWell 글로컬 프로젝트팀 · 글로벌치유관광협회</span><span></span></div>
+</section>
+
+<!-- BOOKS 2 -->
+<section id="sbooks2" data-sec="IV2" class="slide" data-title="아마존 출간 도서 서가">
+  <p class="kicker">전략 2 · 브랜드 실행 사례</p>
+  <h2>아마존 출간 도서 — 표지를 누르면 아마존에서 열립니다</h2>
+  <div class="shelf">
+    <a class="book c1" href="https://www.amazon.com/dp/B0HDG65Z5G" target="_blank" rel="noopener"><span class="cat">한글</span><b>The Great Secret of the Korean Language</b><small>Lae Young Lee 외</small><em>아마존 상세 페이지</em></a>
+    <a class="book c2" href="https://www.amazon.com/dp/B0HDL9C37M" target="_blank" rel="noopener"><span class="cat">국악</span><b>The Great Secret of Huntr/x and Arirang</b><small>Kyu Young Lee 외 · 500 Years of Sound Hidden in K-Pop</small><em>아마존 상세 페이지</em></a>
+    <a class="book c3" href="https://www.amazon.com/dp/B0HF3BJW43" target="_blank" rel="noopener"><span class="cat">명상</span><b>CHANGED</b><small>Tae Won Kang · Foreword Yong Keun Lee</small><em>아마존 상세 페이지</em></a>
+    <a class="book c4" href="https://www.amazon.com/s?k=Real+Wonderland+Korea+K-MediWell&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">국가브랜드</span><b>Real Wonderland, Korea</b><small>K-MediWell 국가브랜드 비전</small><em>아마존 검색 결과</em></a>
+    <a class="book c5" href="https://www.amazon.com/s?k=A+Transformation+Journey+Yong+Keun+Lee&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">치유여행</span><b>A Transformation Journey That Changes Me</b><small>Yong Keun Lee</small><em>아마존 검색 결과</em></a>
+    <a class="book c6" href="https://www.amazon.com/s?k=The+Sweet+Journey+of+Farewell&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">치유여행</span><b>The Sweet Journey of Farewell</b><small>K-MediWell 치유여행 시리즈</small><em>아마존 검색 결과</em></a>
+    <a class="book c7" href="https://www.amazon.com/s?k=A+Journey+that+Asks+for+the+Way+of+Life&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">치유여행</span><b>A Journey that Asks for the Way of Life</b><small>K-MediWell 치유여행 시리즈</small><em>아마존 검색 결과</em></a>
+    <a class="book c8" href="https://www.amazon.com/s?k=A+Journey+That+Discovers+the+Self&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">치유여행</span><b>A Journey That Discovers the Self</b><small>K-MediWell 치유여행 시리즈</small><em>아마존 검색 결과</em></a>
+    <a class="book c9 soon" href="https://www.amazon.com/s?k=K-MediWell+Brand+Strategy+Healing+Tourism+Powerhouse&amp;i=digital-text" target="_blank" rel="noopener"><span class="cat">출간 준비</span><b>K-MediWell Brand Strategy for Korea's Rise as a Healing Tourism Powerhouse</b><small>글로벌치유관광협회 · 이용근·이규영·이래영</small><em>아마존 검색 결과</em></a>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+    <p class="tiny">상세 페이지 표시 도서는 해당 책으로 바로 연결되며, 검색 결과 표시 도서는 아마존 킨들 검색 화면으로 연결됩니다.</p>
+    <a class="allbooks" href="https://www.amazon.com/s?k=Yong+keun+lee&amp;i=stripbooks" target="_blank" rel="noopener">아마존에서 저자 도서 전체 보기</a>
+  </div>
+  <div class="foot"><span>K-MediWell 글로컬 프로젝트팀 · 글로벌치유관광협회 공동 추진</span><span></span></div>
+</section>
+
+<!-- 25 KHI -->
+<section id="s25" data-sec="IV3" class="slide" data-title="전략 3: K-치유지수">
+  <p class="kicker">전략 3 · 과학적 검증체계</p>
+  <h2>뉴로피드백·생체에너지 데이터로 만드는 K-치유지수(KHI)</h2>
+  <p class="lead">치유효과를 숫자로 떨어뜨려야 정책 근거도, 고부가가치 상품도 성립합니다.</p>
+  <div class="flow">
+    <div class="st"><i>①</i><b>사전 측정</b><span>입장 5분 기준선</span></div>
+    <div class="st"><i>②</i><b>코어 프로그램</b><span>맨발걷기 + 지역자원</span></div>
+    <div class="st"><i>③</i><b>사후 측정</b><span>변화량·회복률 산출</span></div>
+    <div class="st"><i>④</i><b>AI 분석·처방</b><span>다국어 리포트</span></div>
+    <div class="st"><i>⑤</i><b>치유지수 KHI</b><span>인증·재방문 축적</span></div>
+  </div>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="box"><h3>뇌파 · EEG/BQ2</h3><p class="small">알파파 증가율, 세타·베타 비율, 좌우 균형 → 이완·집중 회복도</p></div>
+    <div class="box"><h3>자율신경 · HRV</h3><p class="small">SDNN, RMSSD, LF/HF → 스트레스 회복도</p></div>
+    <div class="box"><h3>생체에너지 · 접지</h3><p class="small">체표 전위차, 말초 체온, 수면·활동량 → 접지 효과 지수</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:14px">
+    <p class="small"><b>분야별 지표 흡수</b> 산림(코르티솔·NK세포·POMS), 예술(뇌·생리·심리·안전·관광 5대 지표), 요가(개인건강·관광경험·지역산업 3층), 음식(식재료 안전성·통곡물·당 저감)</p>
+    <p class="small"><b>100점 척도로 합산</b> 30일 후 앱 재측정값이 다시 기준선이 되며, 축적된 KHI 원장은 융복합 인증 심사자료이자 보험사·송출기관 협상 근거가 됩니다.</p>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 패널 01·05·07·08 지표 통합</span><span>25</span></div>
+</section>
+
+<!-- 26 PLATFORM -->
+<section id="s26" data-sec="IV3" class="slide" data-title="Web3.0 치유관광플랫폼">
+  <p class="kicker">전략 3 · 플랫폼 구조</p>
+  <h2>K-MediWell 스마트 치유관광 플랫폼 — 5계층 구조</h2>
+  <p class="lead">접지에서 시작한 현장 경험이 데이터(DX)와 AI(AX)를 거쳐 국가브랜드로 올라가는 단일 파이프라인입니다.</p>
+  <div class="layer"><b>자원층 · Ground</b><span class="small">맨발걷기길 2,000+ · 10대 법정 치유관광자원 · 4대 분류체계 · 권역 거점</span><span class="r">현장</span></div>
+  <div class="layer d"><b>측정층 · DX</b><span class="small">뇌파(EEG·BQ2) · 자율신경(HRV) · 생체에너지(접지 전위) 웨어러블 수집</span><span class="r">데이터</span></div>
+  <div class="layer d"><b>지능층 · AX</b><span class="small">생성형 AI 기반 맞춤 처방 · 다국어 리포트 자동화 · 수요 예측</span><span class="r">AI</span></div>
+  <div class="layer"><b>플랫폼층 · Web3.0</b><span class="small">예약·매칭·처방·정산 통합, 치유관광서비스업 1인 창업자 입점</span><span class="r">산업화</span></div>
+  <div class="layer w"><b>브랜드층</b><span class="small">K-MediWell 국제인증 · Real Wonderland Korea 해외 송출 · 보험사 연계</span><span class="r">대국</span></div>
+  <div class="grid g4" style="margin-top:12px">
+    <p class="small"><b>데이터 주권</b> 관광객이 자신의 치유 기록을 소유하는 디지털 치유여권</p>
+    <p class="small"><b>인증 투명성</b> 프로그램·인증 이력의 위변조 방지 기록</p>
+    <p class="small"><b>자동 정산</b> 다자 참여 패키지의 수익 배분 자동화</p>
+    <p class="small"><b>리워드</b> 치유관광 바우처·재방문 보상 연동</p>
+  </div>
+  <div class="foot"><span>건강정보는 개인정보보호법상 민감정보로, 동의·가명처리 기준을 플랫폼 설계에 함께 반영합니다</span><span>26</span></div>
+</section>
+
+<!-- 27 HIGH VALUE -->
+<section id="s27" data-sec="IV3" class="slide" data-title="고부가가치 선순환">
+  <p class="kicker">고부가가치 산업화</p>
+  <h2>측정이 가치를 만들고, 가치가 산업을 만듭니다</h2>
+  <div class="flow" style="margin-top:18px">
+    <div class="st"><i>측정</i><b>KHI 데이터 축적</b><span>효과의 객관화</span></div>
+    <div class="st"><i>인증</i><b>등급별 국가 인증</b><span>Certified·Premium·Flagship</span></div>
+    <div class="st"><i>가격</i><b>프리미엄 가격 수용</b><span>검증된 헬스케어 상품</span></div>
+    <div class="st"><i>연계</i><b>보험·송출기관 계약</b><span>장기요양보험·해외 보험사</span></div>
+    <div class="st"><i>재투자</i><b>지역 재생·일자리</b><span>인구감소지역 체류 확대</span></div>
+  </div>
+  <div class="grid g2" style="margin-top:24px;gap:28px">
+    <div>
+      <p class="small" style="font-weight:600;margin-bottom:8px">2030년 K-MediWell 실행 시 전망</p>
+      <table>
+        <tr><td>의료·웰니스 관광객</td><td style="text-align:right"><b>687만 명</b></td></tr>
+        <tr><td>소비 규모</td><td style="text-align:right"><b>17.5조 원</b></td></tr>
+        <tr><td>생산유발효과</td><td style="text-align:right"><b>32조 원</b></td></tr>
+        <tr><td>부가가치유발효과</td><td style="text-align:right"><b>14조 원</b></td></tr>
+        <tr><td>취업유발인원</td><td style="text-align:right"><b>19만 명</b></td></tr>
+      </table>
+      <p class="tiny" style="margin-top:6px">출처: 국회입법조사처 「대한민국 의료·웰니스 관광 발전 방향과 활성화 전략」 Vol.39(2026.04) 인용</p>
+    </div>
+    <div>
+      <div class="box gold"><h3>정부 목표와의 정렬</h3><p class="small">치유관광산업 기본방향: 5대 권역 특화 프로그램 25건, 치유관광산업지구 25개소, 전문인력 2,500명, 치유관광 이용객 2031년 500만 명</p></div>
+      <div class="box" style="margin-top:12px"><h3>관광객 3천만~5천만 시대</h3><p class="small">'보고 지나가는 관광'에서 K-치유관광 인프라에 머물고 체류하는 관광으로 (박동창)</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 패널 02(정부 기본방향 제안), 발제 1</span><span>27</span></div>
+</section>
+
+<!-- PART V -->
+<section id="s28" data-sec="V" class="slide dark part" data-title="Ⅴ. 실행 과제">
+  <p class="kicker">Part Ⅴ</p>
+  <h2 class="serif" style="font-size:54px;margin-top:180px;max-width:760px;line-height:1.2">제도를 넘어 생태계로 — 실행 과제</h2>
+  <p class="lead" style="margin-top:18px;font-size:18px">사람, 예산, 법, 그리고 시간표</p>
+  <div class="numeral">Ⅴ</div>
+</section>
+
+<!-- 29 STARTUP & PEOPLE -->
+<section id="s29" data-sec="V" class="slide" data-title="1인 창업과 전문인력">
+  <p class="kicker">사람이 곧 산업</p>
+  <h2>치유관광서비스업 1인 창업과 융합형 전문인력</h2>
+  <div class="grid g2" style="margin-top:14px;gap:28px">
+    <div>
+      <div class="box gold"><h3>1인 창업이 가능한 구조</h3><p class="small">서비스 제공형 등록은 숙박시설 없이 상시 프로그램 1개와 전문인력 1명으로 가능합니다. 맨발길·지역자원을 활용하면 초기 투자 없이 창업할 수 있습니다.</p></div>
+      <div class="box" style="margin-top:12px"><h3>창업 공식</h3><p class="small">맨발걷기(코어) + 지역특화자원 + MediWell/WellMedi 목적 설정 → 플랫폼 입점 → KHI 측정으로 Certified 등급 획득 → 시설형 사업자와 결합해 Premium 패키지(예: 5박 6일 고가 글로벌 패키지)</p></div>
+      <div class="box" style="margin-top:12px"><h3>지역 클러스터링</h3><p class="small">서비스형(요가·명상·예술 전문가, 숙박 없음)과 시설형(호텔·리조트, 콘텐츠 부족)이 결합해 독자생존을 넘어섭니다.</p></div>
+    </div>
+    <div>
+      <table>
+        <tr><th>기존 자격·인력</th><th>규모·현황</th></tr>
+        <tr><td>산림치유지도사</td><td>약 2,100명</td></tr>
+        <tr><td>치유농업사(1·2급)</td><td>391명(2023)</td></tr>
+        <tr><td>해양치유 전문인력</td><td>양성기관 지정, 국가자격 미도입</td></tr>
+        <tr><td>치유관광 코디네이터</td><td>신설 필요, 융합 프로그램 기획자</td></tr>
+      </table>
+      <p class="small" style="margin-top:14px"><b>통합 양성체계 제안</b></p>
+      <ul class="clean small">
+        <li>국가공인 치유관광사 신설, 분야별 기존 자격과 상호 인정</li>
+        <li>대학 교과과정·비교과(창업캠프·해커톤)와 연계한 실전형 창업자 양성</li>
+        <li>요가·명상·예술 전문가에게 관광서비스·안전·외국인 응대 전환교육</li>
+        <li>예술치유 안전 기준: 사전 선별·동의·전문인력·위기 대응 연계</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>출처: 발제 2 부속자료, 패널 02·03·04·07·08</span><span>29</span></div>
+</section>
+
+<!-- 30 BUDGET -->
+<section id="s30" data-sec="V" class="slide" data-title="5개년 예산 편성(안)">
+  <p class="kicker">예산 편성 종합안</p>
+  <h2>K-치유관광 육성을 위한 5개년(2027~2031) 예산 편성(안)</h2>
+  <table style="margin-top:14px">
+    <tr><th style="width:13%">구분</th><th style="width:26%">사업명</th><th style="width:22%">예산 규모(안)</th><th>재원·방식</th><th style="width:17%">소관</th></tr>
+    <tr><td><span class="tag">마중물 투자</span></td><td>K-치유관광 육성펀드</td><td>3,000억 원(5개년 조성)</td><td>정책금융(융자+보조), 시설 개보수·디지털화</td><td>문체부·산업은행</td></tr>
+    <tr><td><span class="tag">세제 지원</span></td><td>우수 치유관광시설 세제혜택</td><td>조세지출 연 50억 원 추정</td><td>소득·법인세 감면(조특법 개정)</td><td>기재부·문체부</td></tr>
+    <tr><td><span class="tag">수요 진작</span></td><td>치유관광 바우처</td><td>연 200억 원</td><td>1인 20만 원 × 10만 명, 근로자휴가지원 연계</td><td>문체부·고용노동부</td></tr>
+    <tr><td><span class="tag">인프라 투자</span></td><td>앵커특구(치유의 섬) 조성</td><td>권역당 500억 원 매칭</td><td>국비 250억 + 지방비 250억</td><td>문체부·지자체</td></tr>
+    <tr class="hi"><td><span class="tag g">브랜드·플랫폼</span></td><td>K-MediWell 브랜드전략 및 플랫폼 구축</td><td>250억 원(안)</td><td>국비+지방비 매칭, 브랜드 마케팅 연계</td><td>문체부·한국관광공사</td></tr>
+    <tr><td><span class="tag">인력 양성</span></td><td>국가공인 치유관광사 자격제도</td><td>연 30억 원</td><td>법정 자격시험·연수 국고보조</td><td>문체부·한국관광공사</td></tr>
+    <tr><td><span class="tag c">거버넌스</span></td><td>통합 컨트롤타워 운영·KHI 표준 R&D</td><td>별도 편성 제안</td><td>위원회 사무국·공통지표 R&D·실증사업</td><td>대통령 직속 위원회</td></tr>
+  </table>
+  <p class="tiny" style="margin-top:10px">※ 상기 금액은 정책 토론을 위한 제안치이며 확정 예산이 아닙니다. 거버넌스 항목은 본 통합안에서 추가 제안한 사업입니다.</p>
+  <div class="foot"><span>출처: 발제 2 부속 정책자료</span><span>30</span></div>
+</section>
+
+<!-- 31 ASK TO ASSEMBLY -->
+<section id="s31" data-sec="V" class="slide" data-title="국회에 바랍니다">
+  <p class="kicker">정책 제언</p>
+  <h2>국회에 바랍니다 — 입법·예산 과제</h2>
+  <div class="grid g2" style="margin-top:14px;gap:12px 28px">
+    <div class="box clay"><h3>컨트롤타워 법적 근거</h3><p class="small">부처 간 조정 권한을 가진 대통령 직속 치유관광 통합추진위원회 설치 근거를 법률에 마련</p></div>
+    <div class="box clay"><h3>K-MediWell 국가 브랜드 근거</h3><p class="small">국가 공인 브랜드 지정과 해외 마케팅·인증 예산을 지원하는 법적 근거 신설</p></div>
+    <div class="box clay"><h3>K-치유지수·플랫폼 구축</h3><p class="small">KHI를 법정 성과지표로 명시하고 데이터 기반 스마트 K-치유관광 플랫폼 구축 예산 반영</p></div>
+    <div class="box"><h3>하위법령 정비</h3><p class="small">시행령·시행규칙에 맨발걷기길을 포함한 6대 자원 융복합 인증 기준 명시, 치유농업의 치유관광자원 명시</p></div>
+    <div class="box"><h3>예산 확보</h3><p class="small">치유관광산업지구 시범 지정, 맨발걷기 인프라, 치유관광 바우처 국고보조 예산 신설</p></div>
+    <div class="box"><h3>인력양성 지원</h3><p class="small">국가공인 치유관광사 신설, 대학 교과과정 연계 국가 인력양성 체계 구축</p></div>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 패널 04·07·08 제안 통합</span><span>31</span></div>
+</section>
+
+<!-- 32 ROADMAP -->
+<section id="s32" data-sec="V" class="slide" data-title="이행 로드맵">
+  <p class="kicker">이행 타임라인</p>
+  <h2>3단계 이행 로드맵</h2>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="box" style="background:var(--forest);color:#fff;border-color:var(--marigold)"><p class="tiny" style="color:var(--marigold)">Phase 1</p><h3>2026 하반기~2027 · 기반 조성</h3>
+      <ul class="clean small" style="color:#E3EAE5"><li>국회: 펀드·특구·바우처 예산 통과, 컨트롤타워 설치 근거 입법</li><li>정부: KHI 공통지표·인증 기준 수립, 브랜드 전략 수립</li><li>민간: 고부가가치 사업계획 수립, 지자체 등록 개시</li></ul></div>
+    <div class="box" style="background:var(--moss);color:#fff;border-color:var(--marigold)"><p class="tiny" style="color:var(--marigold)">Phase 2</p><h3>2027~2028 · 인프라 고도화</h3>
+      <ul class="clean small" style="color:#E3EAE5"><li>조세특례제한법 개정, 행정망 전산 연동</li><li>권역별 실증: 산림·해양·예술·맨발걷기 등 3개 이상 지역에서 효과 검증</li><li>플랫폼 1차 오픈, 1인 창업자 입점</li></ul></div>
+    <div class="box" style="background:#6E5A2E;color:#fff;border-color:var(--marigold)"><p class="tiny" style="color:var(--marigold)">Phase 3</p><h3>2029 이후 · 글로벌 도약</h3>
+      <ul class="clean small" style="color:#E3EAE5"><li>국가공인 자격 정착, 앵커특구 확산</li><li>K-MediWell 국제 인증, 해외 송출·보험사 채널 연결</li><li>2031년 치유관광 이용객 500만 명, 산업지구 25개소</li></ul></div>
+  </div>
+  <div class="grid g4" style="margin-top:20px">
+    <div class="box"><h3 style="font-size:16px">국가</h3><p class="small">기반·제도·예산, 통합 컨트롤타워</p></div>
+    <div class="box"><h3 style="font-size:16px">지자체</h3><p class="small">맨발길·자원 매핑, 산업지구, 지역 매칭</p></div>
+    <div class="box"><h3 style="font-size:16px">민간·협회</h3><p class="small">맨발길 표준, 분야별 프로그램·안전 기준</p></div>
+    <div class="box"><h3 style="font-size:16px">대학·업계</h3><p class="small">인력 양성, 1인 창업, 상품·시장 개척</p></div>
+  </div>
+  <div class="foot"><span>출처: 발제 2, 발제 1, 패널 08 로드맵 통합</span><span>32</span></div>
+</section>
+
+<!-- 33 CLOSING -->
+<section id="s33" data-sec="end" class="slide dark" data-title="맺음말">
+  <p class="kicker">맺음말</p>
+  <h1 style="margin-top:40px;font-size:52px;max-width:1000px">모든 치유는, 땅을 딛는 것에서 시작됩니다</h1>
+  <p class="serif" style="font-size:22px;margin-top:20px;color:#E8E2CF;max-width:920px;line-height:1.6">제도를 넘어 생태계로. 오늘 모인 국회의원 여러분의 입법과 예산 결단이 '껍데기뿐인 법'을 대한민국 지역소멸을 막을 '글로벌 앵커 산업'으로 깨울 수 있습니다.</p>
+  <div class="grid g3" style="margin-top:34px;max-width:1000px">
+    <div class="box"><h3>하나의 창구</h3><p class="small">대통령 직속 치유관광 통합 컨트롤타워</p></div>
+    <div class="box"><h3>하나의 이름</h3><p class="small">K-MediWell × Real Wonderland Korea</p></div>
+    <div class="box"><h3>하나의 척도</h3><p class="small">K-치유지수 기반 Web3.0 치유관광플랫폼</p></div>
+  </div>
+  <p style="position:absolute;left:72px;bottom:56px;font-size:15px">이용근 · 국립공주대학교 스마트의료웰니스관광대학원 &nbsp;&nbsp; <b>감사합니다</b></p>
+  <div class="foot"><span>국회가 길을 열고, 대한민국이 세계로 함께 나아갑니다.</span><span>33</span></div>
+</section>
+
+</div></div>
+
+<div id="ui" role="toolbar" aria-label="슬라이드 이동">
+  <button id="prev" aria-label="이전 슬라이드">이전</button>
+  <span id="counter" aria-live="polite"></span>
+  <button id="next" aria-label="다음 슬라이드">다음</button>
+  <button id="fs" aria-label="전체 화면">전체 화면</button>
+</div>
+
+<script>
+(function(){
+  var SECS=[
+    {k:'intro',label:'도입'},
+    {k:'I',label:'Ⅰ 왜 지금'},
+    {k:'II',label:'Ⅱ 분절 진단'},
+    {k:'III',label:'Ⅲ 맨발걷기 허브'},
+    {k:'IV',label:'Ⅳ 3대 전략',groups:{IV0:'전략 개요',IV1:'전략 1 · 통합 컨트롤타워',IV2:'전략 2 · K-MediWell 국가브랜드',IV3:'전략 3 · K-치유지수 플랫폼'},short:{IV0:'개요',IV1:'전략 1 컨트롤타워',IV2:'전략 2 국가브랜드',IV3:'전략 3 K-치유지수'}},
+    {k:'V',label:'Ⅴ 실행'},
+    {k:'end',label:'맺음말'}
+  ];
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var ids=slides.map(function(s){return s.id});
+  var stage=document.getElementById('stage');
+  var cur=0, lastNode=null;
+  function top(sec){return sec.indexOf('IV')===0?'IV':sec}
+  function nodeKey(sec){return sec==='intro'?null:sec}
+
+  /* build top menu + persistent sub menu row */
+  var bar=document.getElementById('topbar');
+  var sub=document.getElementById('subbar');
+  var home=document.createElement('button');home.className='home';home.textContent='⌂ 전체 구조도';home.onclick=function(){go('map')};bar.appendChild(home);
+  var firstOf={};
+  slides.forEach(function(s,i){var t=top(s.getAttribute('data-sec')); if(!(t in firstOf)) firstOf[t]=i;});
+  SECS.forEach(function(S,si){
+    var m=document.createElement('div');m.className='menu';m.setAttribute('data-k',S.k);
+    var b=document.createElement('button');b.className='mbtn';b.textContent=S.label;
+    b.onclick=function(e){e.stopPropagation();show(firstOf[S.k])};
+    m.appendChild(b);bar.appendChild(m);
+  });
+  var sp=document.createElement('div');sp.className='spacer';bar.appendChild(sp);
+  var crumb=document.createElement('div');crumb.className='crumb';bar.appendChild(crumb);
+  function closeMenus(){}
+  var subItems=[];
+  function buildSub(k){
+    sub.innerHTML='';subItems=[];
+    sub.setAttribute('data-k',k||'map');
+    if(!k){
+      var h=document.createElement('span');h.className='subhint';h.textContent='전체 구조도 — 상단 메뉴나 구조도의 블록을 누르면 해당 파트의 세부 목록이 이 줄에 펼쳐집니다';sub.appendChild(h);fit();return;
+    }
+    var S=SECS.filter(function(x){return x.k===k})[0];
+    var par=document.createElement('button');par.className='parent';par.textContent=S.label;par.title='이 파트의 첫 슬라이드로';par.onclick=function(){show(firstOf[k])};sub.appendChild(par);
+    var arrow=document.createElement('span');arrow.className='subarrow';arrow.textContent='›';sub.appendChild(arrow);
+    var lastG=null,n=0;
+    slides.forEach(function(s,i){
+      var sec=s.getAttribute('data-sec'); if(top(sec)!==k) return;
+      if(S.groups && sec!==lastG){var g=document.createElement('span');g.className='grp';g.textContent=S.short[sec];sub.appendChild(g);lastG=sec;}
+      n++;
+      var it=document.createElement('button');it.className='sitem';
+      var t=s.getAttribute('data-title').replace(/^전략 \d: /,'').replace(/^[ⅠⅡⅢⅣⅤ]\. .*/,'파트 표지');
+      it.innerHTML='<i>'+n+'</i>'+t;it.setAttribute('data-i',i);
+      it.onclick=function(){show(i)};sub.appendChild(it);subItems.push(it);
+    });
+    sub.classList.toggle('dense',subItems.length>7);
+    fit();
+  }
+  /* back-to-map chips on every slide except map */
+  slides.forEach(function(s){ if(s.id==='map')return; var t=document.createElement('button');t.className='tomap';t.textContent='⌂ 전체 구조도';t.onclick=function(){go('map')};s.appendChild(t); });
+
+  /* clickable map nodes */
+  [].forEach.call(document.querySelectorAll('[data-go]'),function(el){
+    el.addEventListener('click',function(e){e.stopPropagation();go(el.getAttribute('data-go'))});
+  });
+
+  slides.forEach(function(s,i){var f=s.querySelectorAll('.foot span');if(f.length>1)f[f.length-1].textContent=(i+1<10?'0':'')+(i+1);});
+  function go(id){var i=ids.indexOf(id); if(i>-1) show(i)}
+  function fit(){
+    var th=52+(sub?sub.offsetHeight:44);
+    var w=window.innerWidth,h=window.innerHeight-th-52;
+    var k=Math.min(w/1280,h/720);
+    stage.style.transform='scale('+k+')';
+    document.getElementById('viewport').style.top=th+'px';
+    document.getElementById('bar').style.setProperty('top',th+'px','important');
+    document.getElementById('viewport').style.bottom='48px';
+  }
+  function show(i){
+    var prevSec=slides[cur]?slides[cur].getAttribute('data-sec'):null;
+    cur=Math.max(0,Math.min(slides.length-1,i));
+    var s=slides[cur], sec=s.getAttribute('data-sec');
+    if(sec==='map' && prevSec && prevSec!=='map'){ lastNode=nodeKey(prevSec); }
+    slides.forEach(function(x,j){x.classList.toggle('active',j===cur)});
+    [].forEach.call(document.querySelectorAll('.mapslide [data-node]'),function(n){n.classList.toggle('last',n.getAttribute('data-node')===lastNode)});
+    [].forEach.call(bar.querySelectorAll('.menu'),function(m){m.classList.toggle('cur',m.getAttribute('data-k')===top(sec))});
+    var tk=sec==='map'?null:top(sec); if(sub.getAttribute('data-k')!==(tk||'map')) buildSub(tk);
+    subItems.forEach(function(b){var on=+b.getAttribute('data-i')===cur;b.classList.toggle('on',on);if(on&&b.scrollIntoView)b.scrollIntoView({block:'nearest',inline:'nearest'});});
+    home.classList.toggle('cur',sec==='map');
+    var S=SECS.filter(function(x){return x.k===top(sec)})[0];
+    crumb.textContent=sec==='map'?'':('슬라이드 '+(cur+1)+' / '+slides.length);
+    document.getElementById('counter').textContent=(cur+1)+' / '+slides.length;
+    document.getElementById('bar').style.width=((cur+1)/slides.length*100)+'%';
+    try{ localStorage.setItem('khts-slide2',s.id); }catch(e){}
+    if(history.replaceState){ try{history.replaceState(null,'','#'+s.id);}catch(e){} }
+  }
+  document.getElementById('prev').onclick=function(){show(cur-1)};
+  document.getElementById('next').onclick=function(){show(cur+1)};
+  document.getElementById('fs').onclick=function(){
+    var d=document.documentElement;
+    if(!document.fullscreenElement){ if(d.requestFullscreen) d.requestFullscreen().catch(function(){}); }
+    else if(document.exitFullscreen){ document.exitFullscreen(); }
+  };
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1){e.preventDefault();closeMenus();show(cur+1)}
+    else if(['ArrowLeft','PageUp'].indexOf(e.key)>-1){e.preventDefault();closeMenus();show(cur-1)}
+    else if(e.key==='Escape'||e.key==='m'||e.key==='M'){closeMenus();go('map')}
+    else if(e.key==='Home'){show(0)} else if(e.key==='End'){show(slides.length-1)}
+  });
+  var tx=null;
+  document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(tx===null)return; var dx=e.changedTouches[0].clientX-tx;
+    if(Math.abs(dx)>60){show(cur+(dx<0?1:-1))} tx=null;
+  },{passive:true});
+  window.addEventListener('resize',fit);
+  fit();
+  var start='map', m=location.hash.match(/^#([\w-]+)$/);
+  if(m && ids.indexOf(m[1])>-1){start=m[1]}
+  go(start);
+})();
+</script>
+
+</body>
+</html>
